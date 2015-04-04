@@ -5,10 +5,10 @@ A modified ARMA3 Patrol Ops 3.1 mission for the TEI Halo Mod
 This is a server map to be used on a dedicated server. 
 
 Based on: 
-Patrol Ops 3.1 [www.armaholic.com] 
+[Patrol Ops 3.1] (http://www.armaholic.com/page.php?id=23671)
 
 Link to the PBO: 
-Dropbox Link to the PBO[www.dropbox.com] 
+[Dropbox Link to the PBO] (https://www.dropbox.com/s/wel18osfxlvzs64/cox_patrol-ops-halo.Altis.pbo) 
 
 ##Live Server at:
 
