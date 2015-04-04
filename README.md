@@ -17,8 +17,8 @@ Link to the PBO:
 
 
 ##Requirements:
-[@TEI 0.13 alpha] (http://www.armaholic.com/page.php?id=28322)
-[@CBA_A3] (http://www.armaholic.com/page.php?id=18767)
+* [@TEI 0.13 alpha] (http://www.armaholic.com/page.php?id=28322)
+* [@CBA_A3] (http://www.armaholic.com/page.php?id=18767)
 
 ##Features:
 * 3D and 2D HUD (Hit U in game and enable.) 
