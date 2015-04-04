@@ -4,15 +4,17 @@ A modified ARMA3 Patrol Ops 3.1 mission for the TEI Halo Mod
 ##Introduction:
 This is a server map to be used on a dedicated server. 
 
-##Live Server at:
-
-143.167.132.10 port 27029 or filter by [TEI] 
-
 Based on: 
 Patrol Ops 3.1 [www.armaholic.com] 
 
 Link to the PBO: 
 Dropbox Link to the PBO[www.dropbox.com] 
+
+##Live Server at:
+
+143.167.132.10 port 27029 or filter by [TEI] 
+
+
 
 ##Requirements:
 @TEI (0.13 alpha) [www.armaholic.com] 
