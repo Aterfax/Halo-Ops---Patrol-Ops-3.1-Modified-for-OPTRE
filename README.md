@@ -21,25 +21,25 @@ Link to the PBO:
 [@CBA_A3] (http://www.armaholic.com/page.php?id=18767)
 
 ##Features:
-*3D and 2D HUD (Hit U in game and enable.) 
-*The innies as OPFOR 
-*UNSC Marines as BLUEFOR. 
-*Zeus for Admin 
-*Headless Client 
-*[ASOR Gear Selector] (http://www.armaholic.com/page.php?id=26177) (Scroll over the ammo boxes) 
-*TEI Vehicles used where appropriate. 
-*Drop-pod insertion ( Scroll over the holotable.) 
-*Base protection from players firing at base. 
-*Rallypoint deployments. 
-*Injury System. 
-*Lift Pelicans (can pick up vehicles and supplyboxes.) 
-*ACRE support. 
+* 3D and 2D HUD (Hit U in game and enable.) 
+* The innies as OPFOR 
+* UNSC Marines as BLUEFOR. 
+* Zeus for Admin 
+* Headless Client 
+* [ASOR Gear Selector] (http://www.armaholic.com/page.php?id=26177) (Scroll over the ammo boxes) 
+* TEI Vehicles used where appropriate. 
+* Drop-pod insertion ( Scroll over the holotable.) 
+* Base protection from players firing at base. 
+* Rallypoint deployments. 
+* Injury System. 
+* Lift Pelicans (can pick up vehicles and supplyboxes.) 
+* ACRE support. 
 
 ##Tasks:
-*Patrol Tasks 
-*Defend Tasks 
-*Destroy Tasks 
-*Delivery / Escort Tasks 
-*Sea Based Tasks 
-*Rescue Tasks 
-*Capture Tasks
+* Patrol Tasks 
+* Defend Tasks 
+* Destroy Tasks 
+* Delivery / Escort Tasks 
+* Sea Based Tasks 
+* Rescue Tasks 
+* Capture Tasks
