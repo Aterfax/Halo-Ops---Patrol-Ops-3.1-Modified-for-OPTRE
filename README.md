@@ -3,7 +3,7 @@ A modified ARMA3 Patrol Ops 3.1 mission for the TEI Halo Mod
 
 ##Introduction:
 
-####Please note this map (and Patrol Ops 3.1 appear to have issues with certain scripts which do not appear to run fully under linux servers.
+####Please note this map (and Patrol Ops 3.1 appear to have issues with certain scripts which do not appear to run fully under linux servers.)
 
 This is a server map to be used on a dedicated server. 
 
