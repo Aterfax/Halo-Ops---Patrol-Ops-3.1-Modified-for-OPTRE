@@ -1,4 +1,4 @@
-# PatrolOps-Halo.altis
+# Halo Ops 1.0
 A modified ARMA3 Patrol Ops 3.1 mission for the TEI Halo Mod
 
 ##Introduction:
@@ -11,16 +11,16 @@ Based on:
 [Patrol Ops 3.1] (http://www.armaholic.com/page.php?id=23671)
 
 Link to the PBO: 
-[Dropbox Link to the PBO] (https://www.dropbox.com/s/wel18osfxlvzs64/cox_patrol-ops-halo.Altis.pbo) 
+[Dropbox Link to the PBO] (https://www.dropbox.com/s/9cqgr4wm8dtxi0j/Halo%20Ops%201.0.pbo?dl=0) 
 
 ##Live Server at:
 
-143.167.132.10 port 27029 or filter by [TEI] 
+143.167.132.10 port 27029 or filter by [OPTRE] 
 
 
 
 ##Requirements:
-* [@TEI 0.13 alpha] (http://www.armaholic.com/page.php?id=28322)
+* [@OPTRE 0.13 alpha] (http://www.moddb.com/mods/operation-trebuchet-total-conversion-for-arma-3)
 * [@CBA_A3] (http://www.armaholic.com/page.php?id=18767)
 
 ##Features:
