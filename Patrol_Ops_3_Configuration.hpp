@@ -25,23 +25,23 @@ PO3_preDefinedEnemySquads = [
 	,["EN_Squad_Sniper", ["B_sniper_F","B_spotter_F"] ]												// Sniper Team 0
 */
 /* CSAT Forces */
-	 ["EN_GroupForce_0", ["TEI_Ins_URF_TeamLead","TEI_Ins_URF_Grenadier","TEI_Ins_URF_Autorifleman","TEI_Ins_URF_Assist_Autorifleman"]]	// Fireteam 0
-	,["EN_GroupForce_1", ["TEI_Ins_URF_TeamLead","TEI_Ins_URF_Grenadier","TEI_Ins_URF_AT_Specialist","TEI_Ins_URF_Rifleman_AT"]]	// Fireteam 1
-	,["EN_GroupForce_2", ["TEI_Ins_URF_TeamLead","TEI_Ins_URF_Grenadier","TEI_Ins_URF_AT_Specialist","TEI_Ins_URF_Rifleman_AT"]]	// Fireteam 2
-	,["EN_GroupForce_3", ["TEI_Ins_URF_TeamLead","TEI_Ins_URF_Grenadier","TEI_Ins_URF_AA_Specialist","TEI_Ins_URF_AA_Specialist"]]	// Fireteam 3
-	,["EN_GroupForce_4", ["TEI_Ins_URF_TeamLead","TEI_Ins_URF_Rifleman_AR","TEI_Ins_URF_Autorifleman","TEI_Ins_URF_Assist_Autorifleman"]]		// Fireteam 4
-	,["EN_GroupForce_5", ["TEI_Ins_URF_TeamLead","TEI_Ins_URF_Rifleman_AR","TEI_Ins_URF_AT_Specialist","TEI_Ins_URF_Rifleman_AT"]]		// Fireteam 5
-	,["EN_GroupForce_6", ["TEI_Ins_URF_TeamLead","TEI_Ins_URF_Rifleman_AR","TEI_Ins_URF_AT_Specialist","TEI_Ins_URF_Demolitions"]]		// Fireteam 6
-	,["EN_GroupForce_7", ["TEI_Ins_URF_TeamLead","TEI_Ins_URF_Rifleman_AR","TEI_Ins_URF_AA_Specialist","TEI_Ins_URF_AA_Specialist"]]		// Fireteam 7
-	,["EN_GroupForce_8", ["TEI_Ins_URF_TeamLead","TEI_Ins_URF_Rifleman_AR","TEI_Ins_URF_Grenadier","TEI_Ins_URF_Assist_Autorifleman"]]			// Fireteam 8
-	,["EN_GroupForce_9", ["TEI_Ins_URF_TeamLead","TEI_Ins_URF_Rifleman_AR","TEI_Ins_URF_Assist_Autorifleman","TEI_Ins_URF_Rifleman_AT"]]		// Fireteam 9
-	,["EN_PatrolGroup0", ["TEI_Ins_URF_TeamLead","TEI_Ins_URF_Engineer","TEI_Ins_URF_Rifleman_AT","TEI_Ins_URF_Marksman"]]				// Fireteam Recon 0
-	,["EN_PatrolGroup1", ["TEI_Ins_URF_TeamLead","TEI_Ins_URF_Engineer","TEI_Ins_URF_Rifleman_AT","TEI_Ins_URF_Medic"]]			// Fireteam Recon 1
-	,["EN_PatrolGroup2", ["TEI_Ins_URF_TeamLead","TEI_Ins_URF_UAV_Op","TEI_Ins_URF_Marksman","TEI_Ins_URF_Demolitions"]]			// Fireteam Recon 2
-	,["EN_PatrolGroup3", ["TEI_Ins_URF_TeamLead","TEI_Ins_URF_UAV_Op","TEI_Ins_URF_Rifleman_AT","TEI_Ins_URF_Demolitions"]]			// Fireteam Recon 3
-	,["EN_PatrolGroup4", ["TEI_Ins_URF_TeamLead","TEI_Ins_URF_UAV_Op","TEI_Ins_URF_Rifleman_AT","TEI_Ins_URF_Medic"]]		// Fireteam Recon 4
+	 ["EN_GroupForce_0", ["OPTRE_Ins_URF_TeamLead","OPTRE_Ins_URF_Grenadier","OPTRE_Ins_URF_Autorifleman","OPTRE_Ins_URF_Assist_Autorifleman"]]	// Fireteam 0
+	,["EN_GroupForce_1", ["OPTRE_Ins_URF_TeamLead","OPTRE_Ins_URF_Grenadier","OPTRE_Ins_URF_AT_Specialist","OPTRE_Ins_URF_Rifleman_AT"]]	// Fireteam 1
+	,["EN_GroupForce_2", ["OPTRE_Ins_URF_TeamLead","OPTRE_Ins_URF_Grenadier","OPTRE_Ins_URF_AT_Specialist","OPTRE_Ins_URF_Rifleman_AT"]]	// Fireteam 2
+	,["EN_GroupForce_3", ["OPTRE_Ins_URF_TeamLead","OPTRE_Ins_URF_Grenadier","OPTRE_Ins_URF_AA_Specialist","OPTRE_Ins_URF_AA_Specialist"]]	// Fireteam 3
+	,["EN_GroupForce_4", ["OPTRE_Ins_URF_TeamLead","OPTRE_Ins_URF_Rifleman_AR","OPTRE_Ins_URF_Autorifleman","OPTRE_Ins_URF_Assist_Autorifleman"]]		// Fireteam 4
+	,["EN_GroupForce_5", ["OPTRE_Ins_URF_TeamLead","OPTRE_Ins_URF_Rifleman_AR","OPTRE_Ins_URF_AT_Specialist","OPTRE_Ins_URF_Rifleman_AT"]]		// Fireteam 5
+	,["EN_GroupForce_6", ["OPTRE_Ins_URF_TeamLead","OPTRE_Ins_URF_Rifleman_AR","OPTRE_Ins_URF_AT_Specialist","OPTRE_Ins_URF_Demolitions"]]		// Fireteam 6
+	,["EN_GroupForce_7", ["OPTRE_Ins_URF_TeamLead","OPTRE_Ins_URF_Rifleman_AR","OPTRE_Ins_URF_AA_Specialist","OPTRE_Ins_URF_AA_Specialist"]]		// Fireteam 7
+	,["EN_GroupForce_8", ["OPTRE_Ins_URF_TeamLead","OPTRE_Ins_URF_Rifleman_AR","OPTRE_Ins_URF_Grenadier","OPTRE_Ins_URF_Assist_Autorifleman"]]			// Fireteam 8
+	,["EN_GroupForce_9", ["OPTRE_Ins_URF_TeamLead","OPTRE_Ins_URF_Rifleman_AR","OPTRE_Ins_URF_Assist_Autorifleman","OPTRE_Ins_URF_Rifleman_AT"]]		// Fireteam 9
+	,["EN_PatrolGroup0", ["OPTRE_Ins_URF_TeamLead","OPTRE_Ins_URF_Engineer","OPTRE_Ins_URF_Rifleman_AT","OPTRE_Ins_URF_Marksman"]]				// Fireteam Recon 0
+	,["EN_PatrolGroup1", ["OPTRE_Ins_URF_TeamLead","OPTRE_Ins_URF_Engineer","OPTRE_Ins_URF_Rifleman_AT","OPTRE_Ins_URF_Medic"]]			// Fireteam Recon 1
+	,["EN_PatrolGroup2", ["OPTRE_Ins_URF_TeamLead","OPTRE_Ins_URF_UAV_Op","OPTRE_Ins_URF_Marksman","OPTRE_Ins_URF_Demolitions"]]			// Fireteam Recon 2
+	,["EN_PatrolGroup3", ["OPTRE_Ins_URF_TeamLead","OPTRE_Ins_URF_UAV_Op","OPTRE_Ins_URF_Rifleman_AT","OPTRE_Ins_URF_Demolitions"]]			// Fireteam Recon 3
+	,["EN_PatrolGroup4", ["OPTRE_Ins_URF_TeamLead","OPTRE_Ins_URF_UAV_Op","OPTRE_Ins_URF_Rifleman_AT","OPTRE_Ins_URF_Medic"]]		// Fireteam Recon 4
 	,["EN_Squad_Divers", ["O_diver_TL_F","O_diver_F","O_diver_F","O_diver_exp_F"]]					// Diver Team 0
-	,["EN_Squad_Sniper", ["TEI_Ins_URF_Sniper","TEI_Ins_URF_Observer"]]												// Sniper Team 0
+	,["EN_Squad_Sniper", ["OPTRE_Ins_URF_Sniper","OPTRE_Ins_URF_Observer"]]												// Sniper Team 0
 /* AAF Forces
 	 ["EN_GroupForce_0", ["I_Soldier_TL_F","I_Soldier_GL_F","I_Soldier_AR_F","I_Soldier_AAR_F"]		// Fireteam 0
 	,["EN_GroupForce_1", ["I_Soldier_TL_F","I_Soldier_GL_F","I_Soldier_AT_F","I_Soldier_AAT_F"]		// Fireteam 1
@@ -66,9 +66,9 @@ PO3_CfgSpawner_PreDefinedSquads = PO3_preDefinedEnemySquads;
 
 // ==== PO3 Friendly Unit Groups ===========================================================================
 PO3_preDefinedFriendlySquads = [
-	 ["FR_GroupRescuePilots",	["TEI_UNSC_Marine_Pilot","TEI_UNSC_Marine_Pilot"] ]
-	,["FR_GroupRescueCrew",		["TEI_UNSC_Marine_Pilot"] ]
-	,["FR_GroupRescueCargo",	["TEI_Ins_URF_TeamLead","TEI_Ins_URF_Autorifleman","TEI_Ins_URF_AT_Specialist","TEI_Ins_URF_AA_Specialist","TEI_Ins_URF_Demolitions","O_medic_F"] ]
+	 ["FR_GroupRescuePilots",	["OPTRE_UNSC_Marine_Pilot","OPTRE_UNSC_Marine_Pilot"] ]
+	,["FR_GroupRescueCrew",		["OPTRE_UNSC_Marine_Pilot"] ]
+	,["FR_GroupRescueCargo",	["OPTRE_Ins_URF_TeamLead","OPTRE_Ins_URF_Autorifleman","OPTRE_Ins_URF_AT_Specialist","OPTRE_Ins_URF_AA_Specialist","OPTRE_Ins_URF_Demolitions","O_medic_F"] ]
 ];
 PO3_CfgSpawner_PreDefinedSquads = PO3_CfgSpawner_PreDefinedSquads + PO3_preDefinedFriendlySquads;
 
@@ -93,21 +93,21 @@ PO3_preDefinedEnemyVehicles = [
 /*15 - Submarines 			,["B_SDV_01_F"] */
 
 /* CSAT Forces */
-/* 0 - Anti Air Vehicles */	 ["TEI_M12R_AA_ins"]
+/* 0 - Anti Air Vehicles */	 ["OPTRE_M12R_AA_ins"]
 /* 1 - Attack Helos */		,["O_Heli_Attack_02_black_F","O_Heli_Attack_02_F"]
 /* 2 - Attack Planes */		,["O_UAV_02_F","O_UAV_02_CAS_F"]
 /* 3 - Heavy Vehicles */	,["O_MBT_02_cannon_F","O_APC_Tracked_02_cannon_F"]
-/* 4 - Light Vehicles */	,["TEI_M12_FAV_APC","TEI_M12_LRV_ins","TEI_M12_LRV_ins"]
+/* 4 - Light Vehicles */	,["OPTRE_M12_FAV_APC","OPTRE_M12_LRV_ins","OPTRE_M12_LRV_ins"]
 /* 5 - Medium Vehicles */	,["O_APC_Wheeled_02_rcws_F"]
 /* 6 - Mobile Artillery */	,["O_MBT_02_arty_F"]
-/* 7 - Transport Helos */	,["TEI_Pelican_unarmed_ins"]
+/* 7 - Transport Helos */	,["OPTRE_Pelican_unarmed_ins"]
 /* 8 - Transport Planes */	,[]
 /* 9 - Transport Trucks */	,["O_Truck_02_covered_F","O_Truck_02_transport_F"]
 /*10 - Static Defence */	,["O_HMG_01_high_F","O_GMG_01_high_F","O_static_AA_F","O_static_AT_F","O_Mortar_01_F"]
 /*11 - Boats */				,["O_Boat_Armed_01_hmg_F"]
 /*12 - UAV */				,["O_UAV_02_CAS_F","O_UAV_02_F"]
 /*13 - UGV */				,["O_UGV_01_F","O_UGV_01_rcws_F"]
-/*14 - Support */			,["O_Truck_02_ammo_F","O_Truck_02_fuel_F","TEI_m1015_mule_ins"]
+/*14 - Support */			,["O_Truck_02_ammo_F","O_Truck_02_fuel_F","OPTRE_m1015_mule_ins"]
 /*15 - Submarines */		,["O_SDV_01_F"]
 
 /* AAF Forces */
@@ -131,11 +131,11 @@ PO3_preDefinedEnemyVehicles = [
 PO3_CfgSpawner_PreDefinedVehicles = PO3_preDefinedEnemyVehicles;
 
 // ==== PO3 Task Specific Entities (west/east/resistance) ==================================================
-PO3_target_officer_types = ["TEI_UNSC_Marine_Sgt_Johnson","TEI_Ins_URF_Officer","TEI_Ins_ER_Warlord"];
+PO3_target_officer_types = ["OPTRE_UNSC_Marine_Sgt_Johnson","OPTRE_Ins_URF_Officer","OPTRE_Ins_ER_Warlord"];
 PO3_target_cache_types = ["B_supplyCrate_F","O_supplyCrate_F","I_supplyCrate_F"];
 PO3_target_tower_types = [ "Land_TTowerBig_2_F" , "Land_Communication_F" ];
 PO3_target_intel_types = ["Land_File1_F","Land_FilePhotos_F","Land_File2_F","Land_HandyCam_F","Land_Laptop_F","Land_Laptop_unfolded_F","Land_MobilePhone_smart_F","Land_SatellitePhone_F","Land_Photos_V2_F"];
-PO3_rescue_heliTypes = ["TEI_Pelican_unarmed_green","TEI_Pelican_unarmed_tan","TEI_Pelican_unarmed_black"];
+PO3_rescue_heliTypes = ["OPTRE_Pelican_unarmed_green","OPTRE_Pelican_unarmed_tan","OPTRE_Pelican_unarmed_black"];
 
 // = Pre-Defining Respawn Deployment Points =====================================================
 PO3_CfgRespawn_PreDefinedPositions = [
@@ -438,18 +438,18 @@ PO3_CfgLogistics_Loadable = [
 	 ["Cargo_base_F",15200]
 	,["B_Truck_01_mover_F",0]
 	,["B_Truck_01_transport_F",64000]
-	,["TEI_m1087_stallion_unsc",64000]
+	,["OPTRE_m1087_stallion_unsc",64000]
 	,["O_Truck_02_transport_F",64000]
 	,["I_Truck_02_transport_F",64000]
 	,["Car_F",250]
 	,["Heli_Transport_01_base_F",1980]
 	,["Heli_Transport_02_base_F",4620]
-	,["TEI_Pelican_unarmed_green",15000]
-	,["TEI_Pelican_unarmed_tan",15000]
-	,["TEI_Pelican_unarmed_black",15000]
-	,["TEI_Pelican_unarmed_ins",15000]
-	,["TEI_Pelican_armed_green",15000]
-	,["TEI_falcon_unarmed",1000]
+	,["OPTRE_Pelican_unarmed_green",15000]
+	,["OPTRE_Pelican_unarmed_tan",15000]
+	,["OPTRE_Pelican_unarmed_black",15000]
+	,["OPTRE_Pelican_unarmed_ins",15000]
+	,["OPTRE_Pelican_armed_green",15000]
+	,["OPTRE_falcon_unarmed",1000]
 	,["Helicopter_Base_H",422]
 ];
 
@@ -457,41 +457,41 @@ PO3_CfgLogistics_Loadable = [
 PO3_CfgLogistics_Liftable = [
 	 ["Cargo_base_F",4280]
 	,["B_supplyCrate_F",400]
-	,["TEI_Magic_Box",400]
+	,["OPTRE_Magic_Box",400]
 	,["Quadbike_01_base_F",264]
 	,["B_Truck_01_transport_F",18300]
 	,["O_Truck_02_transport_F",18300]
 	,["I_Truck_02_transport_F",18300]
 	,["Wheeled_APC_F",16329]
 	,["Car_F",1900]
-	,["TEI_M12_FAV",1900]
-	,["TEI_M12_FAV_black",1900]
-	,["TEI_M12_FAV_tan",1900]
-	,["TEI_M12_FAV_snow",1900]
-	,["TEI_M12_FAV_ins",1900]
-	,["TEI_M813_TT",1900]
-	,["TEI_M813_TT_black",1900]
-	,["TEI_M813_TT_tan",1900]
-	,["TEI_M813_TT_snow",1900]
-	,["TEI_M12_LRV",1900]	
-	,["TEI_M12_LRV_black",1900]
-	,["TEI_M12_LRV_tan",1900]
-	,["TEI_M12_LRV_snow",1900]	
-	,["TEI_M12_LRV_ins",1900]	
-	,["TEI_M12G1_LRV",1900]
-	,["TEI_M12G1_LRV_black",1900]
-	,["TEI_M12G1_LRV_tan",1900]	
-	,["TEI_M12G1_LRV_snow",1900]	
-	,["TEI_M12_FAV_APC",3300]
-	,["TEI_M813_TT",3300]
-	,["TEI_M12A1_LRV",1900]
-	,["TEI_M12R_AA",1900]
-	,["TEI_Pelican_unarmed_green",25000]
-	,["TEI_Pelican_unarmed_tan",25000]
-	,["TEI_Pelican_unarmed_black",25000]
-	,["TEI_Pelican_unarmed_ins",25000]
-	,["TEI_Pelican_armed_green",25000]
-	,["TEI_falcon_unarmed",12000]
+	,["OPTRE_M12_FAV",1900]
+	,["OPTRE_M12_FAV_black",1900]
+	,["OPTRE_M12_FAV_tan",1900]
+	,["OPTRE_M12_FAV_snow",1900]
+	,["OPTRE_M12_FAV_ins",1900]
+	,["OPTRE_M813_TT",1900]
+	,["OPTRE_M813_TT_black",1900]
+	,["OPTRE_M813_TT_tan",1900]
+	,["OPTRE_M813_TT_snow",1900]
+	,["OPTRE_M12_LRV",1900]	
+	,["OPTRE_M12_LRV_black",1900]
+	,["OPTRE_M12_LRV_tan",1900]
+	,["OPTRE_M12_LRV_snow",1900]	
+	,["OPTRE_M12_LRV_ins",1900]	
+	,["OPTRE_M12G1_LRV",1900]
+	,["OPTRE_M12G1_LRV_black",1900]
+	,["OPTRE_M12G1_LRV_tan",1900]	
+	,["OPTRE_M12G1_LRV_snow",1900]	
+	,["OPTRE_M12_FAV_APC",3300]
+	,["OPTRE_M813_TT",3300]
+	,["OPTRE_M12A1_LRV",1900]
+	,["OPTRE_M12R_AA",1900]
+	,["OPTRE_Pelican_unarmed_green",25000]
+	,["OPTRE_Pelican_unarmed_tan",25000]
+	,["OPTRE_Pelican_unarmed_black",25000]
+	,["OPTRE_Pelican_unarmed_ins",25000]
+	,["OPTRE_Pelican_armed_green",25000]
+	,["OPTRE_falcon_unarmed",12000]
 	,["Tank",64000]
 	,["Ship_F",1200]
 	,["Heli_Light_01_armed_base_F",1990]
@@ -508,28 +508,28 @@ PO3_CfgLogistics_TowVehicles = [
 	,["I_Truck_02_transport_F", 10000]
 	,["B_APC_Tracked_01_CRV_F", 64000]
 	,["Car_F", 250]
-	,["TEI_M12_FAV",1900]
-	,["TEI_M12_FAV_black",1900]
-	,["TEI_M12_FAV_tan",1900]
-	,["TEI_M12_FAV_snow",1900]
-	,["TEI_M12_FAV_ins",1900]
-	,["TEI_M813_TT",1900]
-	,["TEI_M813_TT_black",1900]
-	,["TEI_M813_TT_tan",1900]
-	,["TEI_M813_TT_snow",1900]
-	,["TEI_M12_LRV",1900]	
-	,["TEI_M12_LRV_black",1900]
-	,["TEI_M12_LRV_tan",1900]
-	,["TEI_M12_LRV_snow",1900]	
-	,["TEI_M12_LRV_ins",1900]	
-	,["TEI_M12G1_LRV",1900]
-	,["TEI_M12G1_LRV_black",1900]
-	,["TEI_M12G1_LRV_tan",1900]	
-	,["TEI_M12G1_LRV_snow",1900]	
-	,["TEI_M12_FAV_APC",3300]
-	,["TEI_M813_TT",3300]
-	,["TEI_M12A1_LRV",1900]
-	,["TEI_M12R_AA",1900]
+	,["OPTRE_M12_FAV",1900]
+	,["OPTRE_M12_FAV_black",1900]
+	,["OPTRE_M12_FAV_tan",1900]
+	,["OPTRE_M12_FAV_snow",1900]
+	,["OPTRE_M12_FAV_ins",1900]
+	,["OPTRE_M813_TT",1900]
+	,["OPTRE_M813_TT_black",1900]
+	,["OPTRE_M813_TT_tan",1900]
+	,["OPTRE_M813_TT_snow",1900]
+	,["OPTRE_M12_LRV",1900]	
+	,["OPTRE_M12_LRV_black",1900]
+	,["OPTRE_M12_LRV_tan",1900]
+	,["OPTRE_M12_LRV_snow",1900]	
+	,["OPTRE_M12_LRV_ins",1900]	
+	,["OPTRE_M12G1_LRV",1900]
+	,["OPTRE_M12G1_LRV_black",1900]
+	,["OPTRE_M12G1_LRV_tan",1900]	
+	,["OPTRE_M12G1_LRV_snow",1900]	
+	,["OPTRE_M12_FAV_APC",3300]
+	,["OPTRE_M813_TT",3300]
+	,["OPTRE_M12A1_LRV",1900]
+	,["OPTRE_M12R_AA",1900]
 ];
 PO3_CfgLogistics_Towable = [
 	 ["B_Truck_01_mover_F",0]
@@ -539,28 +539,28 @@ PO3_CfgLogistics_Towable = [
 	,["Car", 2000]
 	,["Tank_F", 64000]
 	,["Air", 8291]
-	,["TEI_M12_FAV",1900]
-	,["TEI_M12_FAV_black",1900]
-	,["TEI_M12_FAV_tan",1900]
-	,["TEI_M12_FAV_snow",1900]
-	,["TEI_M12_FAV_ins",1900]
-	,["TEI_M813_TT",1900]
-	,["TEI_M813_TT_black",1900]
-	,["TEI_M813_TT_tan",1900]
-	,["TEI_M813_TT_snow",1900]
-	,["TEI_M12_LRV",1900]	
-	,["TEI_M12_LRV_black",1900]
-	,["TEI_M12_LRV_tan",1900]
-	,["TEI_M12_LRV_snow",1900]	
-	,["TEI_M12_LRV_ins",1900]	
-	,["TEI_M12G1_LRV",1900]
-	,["TEI_M12G1_LRV_black",1900]
-	,["TEI_M12G1_LRV_tan",1900]	
-	,["TEI_M12G1_LRV_snow",1900]	
-	,["TEI_M12_FAV_APC",1900]
-	,["TEI_M813_TT",1900]
-	,["TEI_M12A1_LRV",1900]
-	,["TEI_M12R_AA",1900]
+	,["OPTRE_M12_FAV",1900]
+	,["OPTRE_M12_FAV_black",1900]
+	,["OPTRE_M12_FAV_tan",1900]
+	,["OPTRE_M12_FAV_snow",1900]
+	,["OPTRE_M12_FAV_ins",1900]
+	,["OPTRE_M813_TT",1900]
+	,["OPTRE_M813_TT_black",1900]
+	,["OPTRE_M813_TT_tan",1900]
+	,["OPTRE_M813_TT_snow",1900]
+	,["OPTRE_M12_LRV",1900]	
+	,["OPTRE_M12_LRV_black",1900]
+	,["OPTRE_M12_LRV_tan",1900]
+	,["OPTRE_M12_LRV_snow",1900]	
+	,["OPTRE_M12_LRV_ins",1900]	
+	,["OPTRE_M12G1_LRV",1900]
+	,["OPTRE_M12G1_LRV_black",1900]
+	,["OPTRE_M12G1_LRV_tan",1900]	
+	,["OPTRE_M12G1_LRV_snow",1900]	
+	,["OPTRE_M12_FAV_APC",1900]
+	,["OPTRE_M813_TT",1900]
+	,["OPTRE_M12A1_LRV",1900]
+	,["OPTRE_M12R_AA",1900]
 ];
 // Draggable Weight
 PO3_CfgLogistics_Moveable = [

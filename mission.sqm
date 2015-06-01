@@ -3,18 +3,18 @@ class Mission
 {
 	addOns[]=
 	{
-		"TEI_UNSC_Units_ODST",
-		"TEI_UNSC_Units_Marines",
-		"TEI_UNSC_Units_Army",
+		"OPTRE_UNSC_Units_ODST",
+		"OPTRE_UNSC_Units_Marines",
+		"OPTRE_UNSC_Units_Army",
 		"A3_Armor_F_Panther",
 		"A3_Modules_F_Curator_Curator",
 		"A3_Soft_F_Gamma_HEMTT",
 		"A3_Soft_F_Quadbike",
 		"A3_Armor_F_Slammer",
 		"A3_Armor_F_EPC_MBT_01",
-		"TEI_Vehicles_Warthog",
+		"OPTRE_Vehicles_Warthog",
 		"A3_Weapons_F_Ammoboxes",
-		"TEI_Vehicles_Pelican",
+		"OPTRE_Vehicles_Pelican",
 		"A3_Structures_F_Mil_Helipads",
 		"A3_Structures_F_Mil_Flags",
 		"A3_Boat_F_Boat_Armed_01",
@@ -29,29 +29,29 @@ class Mission
 		"A3_Structures_F_Mil_BagFence",
 		"A3_Animals_F_Rabbit",
 		"a3_map_altis",
-		"TEI_Crates",
-		"TEI_Ins_Object_class",
+		"OPTRE_Crates",
+		"OPTRE_Ins_Object_class",
 		"A3_Structures_F_System",
 		"A3_Structures_F_Bootcamp_Civ_Camping",
 		"A3_Misc_F_Helpers",
-		"TEI_Vehicles_Falcon",
-		"TEI_Vehicles_Misc",
+		"OPTRE_Vehicles_Falcon",
+		"OPTRE_Vehicles_Misc",
 		"A3_Soft_F_HEMTT"
 	};
 	addOnsAuto[]=
 	{
-		"TEI_UNSC_Units_ODST",
-		"TEI_UNSC_Units_Marines",
-		"TEI_UNSC_Units_Army",
+		"OPTRE_UNSC_Units_ODST",
+		"OPTRE_UNSC_Units_Marines",
+		"OPTRE_UNSC_Units_Army",
 		"A3_Armor_F_Panther",
 		"A3_Modules_F_Curator_Curator",
 		"A3_Soft_F_Quadbike",
-		"TEI_Vehicles_Misc",
+		"OPTRE_Vehicles_Misc",
 		"A3_Armor_F_Slammer",
 		"A3_Armor_F_EPC_MBT_01",
-		"TEI_Vehicles_Warthog",
-		"TEI_Vehicles_Falcon",
-		"TEI_Vehicles_Pelican",
+		"OPTRE_Vehicles_Warthog",
+		"OPTRE_Vehicles_Falcon",
+		"OPTRE_Vehicles_Pelican",
 		"A3_Soft_F_Gamma_HEMTT",
 		"A3_Structures_F_Mil_Helipads",
 		"A3_Structures_F_Mil_Flags",
@@ -67,8 +67,8 @@ class Mission
 		"A3_Structures_F_Mil_Cargo",
 		"A3_Structures_F_Mil_BagFence",
 		"A3_Animals_F_Rabbit",
-		"TEI_Crates",
-		"TEI_Ins_Object_class",
+		"OPTRE_Crates",
+		"OPTRE_Ins_Object_class",
 		"A3_Structures_F_System",
 		"A3_Structures_F_Bootcamp_Civ_Camping",
 		"A3_Misc_F_Helpers",
@@ -118,7 +118,7 @@ class Mission
 					special="NONE";
 					id=0;
 					side="WEST";
-					vehicle="TEI_UNSC_ODST_TeamLead";
+					vehicle="OPTRE_UNSC_ODST_TeamLead";
 					player="PLAYER COMMANDER";
 					leader=1;
 					skill=0.5;
@@ -131,7 +131,7 @@ class Mission
 					special="NONE";
 					id=1;
 					side="WEST";
-					vehicle="TEI_UNSC_ODST_ONI_Op";
+					vehicle="OPTRE_UNSC_ODST_ONI_Op";
 					player="PLAY CDG";
 					skill=0.44999999;
 					description="HQ Recon (JTAC)";
@@ -143,7 +143,7 @@ class Mission
 					special="NONE";
 					id=2;
 					side="WEST";
-					vehicle="TEI_UNSC_ODST_Demo";
+					vehicle="OPTRE_UNSC_ODST_Demo";
 					player="PLAY CDG";
 					skill=0.40000001;
 					description="HQ Recon (Explosives)";
@@ -155,7 +155,7 @@ class Mission
 					special="NONE";
 					id=3;
 					side="WEST";
-					vehicle="TEI_UNSC_ODST_Paramedic";
+					vehicle="OPTRE_UNSC_ODST_Paramedic";
 					player="PLAY CDG";
 					skill=0.40000001;
 					description="HQ Medic";
@@ -175,7 +175,7 @@ class Mission
 					special="NONE";
 					id=4;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_SquadLead";
+					vehicle="OPTRE_UNSC_Marine_SquadLead";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.2;
@@ -188,7 +188,7 @@ class Mission
 					special="NONE";
 					id=5;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_TeamLead";
+					vehicle="OPTRE_UNSC_Marine_TeamLead";
 					player="PLAY CDG";
 					skill=0.5;
 					description="Fireteam Leader";
@@ -200,7 +200,7 @@ class Mission
 					special="NONE";
 					id=6;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_Autorifleman";
+					vehicle="OPTRE_UNSC_Marine_Autorifleman";
 					player="PLAY CDG";
 					skill=0.44999999;
 					description="Fireteam Autorifleman";
@@ -212,7 +212,7 @@ class Mission
 					special="NONE";
 					id=7;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_Demolitions";
+					vehicle="OPTRE_UNSC_Marine_Demolitions";
 					player="PLAY CDG";
 					skill=0.40000001;
 					description="Fireteam Grenadier (Explosives)";
@@ -224,7 +224,7 @@ class Mission
 					special="NONE";
 					id=8;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_Rifleman_AT";
+					vehicle="OPTRE_UNSC_Marine_Rifleman_AT";
 					player="PLAY CDG";
 					skill=0.40000001;
 					description="Fireteam Missile Specialist";
@@ -236,7 +236,7 @@ class Mission
 					special="NONE";
 					id=9;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_TeamLead";
+					vehicle="OPTRE_UNSC_Marine_TeamLead";
 					player="PLAY CDG";
 					skill=0.5;
 					description="Fireteam Leader";
@@ -248,7 +248,7 @@ class Mission
 					special="NONE";
 					id=10;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_Demolitions";
+					vehicle="OPTRE_UNSC_Marine_Demolitions";
 					player="PLAY CDG";
 					skill=0.40000001;
 					description="Fireteam Grenadier (Explosives)";
@@ -260,7 +260,7 @@ class Mission
 					special="NONE";
 					id=11;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_Autorifleman";
+					vehicle="OPTRE_UNSC_Marine_Autorifleman";
 					player="PLAY CDG";
 					skill=0.44999999;
 					description="Fireteam Autorifleman";
@@ -272,7 +272,7 @@ class Mission
 					special="NONE";
 					id=12;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_Rifleman_AT";
+					vehicle="OPTRE_UNSC_Marine_Rifleman_AT";
 					player="PLAY CDG";
 					skill=0.40000001;
 					description="Fireteam Missile Specialist";
@@ -284,7 +284,7 @@ class Mission
 					special="NONE";
 					id=13;
 					side="WEST";
-					vehicle="TEI_UNSC_Army_D_Medic";
+					vehicle="OPTRE_UNSC_Army_D_Medic";
 					player="PLAY CDG";
 					skill=0.40000001;
 					description="Section Medic";
@@ -304,7 +304,7 @@ class Mission
 					special="NONE";
 					id=14;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_SquadLead";
+					vehicle="OPTRE_UNSC_Marine_SquadLead";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.2;
@@ -317,7 +317,7 @@ class Mission
 					special="NONE";
 					id=15;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_TeamLead";
+					vehicle="OPTRE_UNSC_Marine_TeamLead";
 					player="PLAY CDG";
 					skill=0.5;
 					description="Fireteam Leader";
@@ -329,7 +329,7 @@ class Mission
 					special="NONE";
 					id=16;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_Autorifleman";
+					vehicle="OPTRE_UNSC_Marine_Autorifleman";
 					player="PLAY CDG";
 					skill=0.44999999;
 					description="Fireteam Autorifleman";
@@ -341,7 +341,7 @@ class Mission
 					special="NONE";
 					id=17;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_Demolitions";
+					vehicle="OPTRE_UNSC_Marine_Demolitions";
 					player="PLAY CDG";
 					skill=0.40000001;
 					description="Fireteam Grenadier (Explosives)";
@@ -353,7 +353,7 @@ class Mission
 					special="NONE";
 					id=18;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_Rifleman_AT";
+					vehicle="OPTRE_UNSC_Marine_Rifleman_AT";
 					player="PLAY CDG";
 					skill=0.40000001;
 					description="Fireteam Missile Specialist";
@@ -365,7 +365,7 @@ class Mission
 					special="NONE";
 					id=19;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_TeamLead";
+					vehicle="OPTRE_UNSC_Marine_TeamLead";
 					player="PLAY CDG";
 					skill=0.5;
 					description="Fireteam Leader";
@@ -377,7 +377,7 @@ class Mission
 					special="NONE";
 					id=20;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_Demolitions";
+					vehicle="OPTRE_UNSC_Marine_Demolitions";
 					player="PLAY CDG";
 					skill=0.40000001;
 					description="Fireteam Grenadier (Explosives)";
@@ -389,7 +389,7 @@ class Mission
 					special="NONE";
 					id=21;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_Autorifleman";
+					vehicle="OPTRE_UNSC_Marine_Autorifleman";
 					player="PLAY CDG";
 					skill=0.44999999;
 					description="Fireteam Autorifleman";
@@ -401,7 +401,7 @@ class Mission
 					special="NONE";
 					id=22;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_Rifleman_AT";
+					vehicle="OPTRE_UNSC_Marine_Rifleman_AT";
 					player="PLAY CDG";
 					skill=0.40000001;
 					description="Fireteam Missile Specialist";
@@ -413,7 +413,7 @@ class Mission
 					special="NONE";
 					id=23;
 					side="WEST";
-					vehicle="TEI_UNSC_Army_D_Medic";
+					vehicle="OPTRE_UNSC_Army_D_Medic";
 					player="PLAY CDG";
 					skill=0.40000001;
 					description="Section Medic";
@@ -433,7 +433,7 @@ class Mission
 					special="NONE";
 					id=24;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_SquadLead";
+					vehicle="OPTRE_UNSC_Marine_SquadLead";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.2;
@@ -446,7 +446,7 @@ class Mission
 					special="NONE";
 					id=25;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_TeamLead";
+					vehicle="OPTRE_UNSC_Marine_TeamLead";
 					player="PLAY CDG";
 					skill=0.5;
 					description="Fireteam Leader";
@@ -458,7 +458,7 @@ class Mission
 					special="NONE";
 					id=26;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_Autorifleman";
+					vehicle="OPTRE_UNSC_Marine_Autorifleman";
 					player="PLAY CDG";
 					skill=0.44999999;
 					description="Fireteam Autorifleman";
@@ -470,7 +470,7 @@ class Mission
 					special="NONE";
 					id=27;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_Demolitions";
+					vehicle="OPTRE_UNSC_Marine_Demolitions";
 					player="PLAY CDG";
 					skill=0.40000001;
 					description="Fireteam Grenadier (Explosives)";
@@ -482,7 +482,7 @@ class Mission
 					special="NONE";
 					id=28;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_Rifleman_AT";
+					vehicle="OPTRE_UNSC_Marine_Rifleman_AT";
 					player="PLAY CDG";
 					skill=0.40000001;
 					description="Fireteam Missile Specialist";
@@ -494,7 +494,7 @@ class Mission
 					special="NONE";
 					id=29;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_TeamLead";
+					vehicle="OPTRE_UNSC_Marine_TeamLead";
 					player="PLAY CDG";
 					skill=0.5;
 					description="Fireteam Leader";
@@ -506,7 +506,7 @@ class Mission
 					special="NONE";
 					id=30;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_Demolitions";
+					vehicle="OPTRE_UNSC_Marine_Demolitions";
 					player="PLAY CDG";
 					skill=0.40000001;
 					description="Fireteam Grenadier (Explosives)";
@@ -518,7 +518,7 @@ class Mission
 					special="NONE";
 					id=31;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_Autorifleman";
+					vehicle="OPTRE_UNSC_Marine_Autorifleman";
 					player="PLAY CDG";
 					skill=0.44999999;
 					description="Fireteam Autorifleman";
@@ -530,7 +530,7 @@ class Mission
 					special="NONE";
 					id=32;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_Rifleman_AT";
+					vehicle="OPTRE_UNSC_Marine_Rifleman_AT";
 					player="PLAY CDG";
 					skill=0.40000001;
 					description="Fireteam Missile Specialist";
@@ -542,7 +542,7 @@ class Mission
 					special="NONE";
 					id=33;
 					side="WEST";
-					vehicle="TEI_UNSC_Army_W_Medic";
+					vehicle="OPTRE_UNSC_Army_W_Medic";
 					player="PLAY CDG";
 					skill=0.40000001;
 					description="Section Medic";
@@ -562,7 +562,7 @@ class Mission
 					special="NONE";
 					id=34;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_SquadLead";
+					vehicle="OPTRE_UNSC_Marine_SquadLead";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.2;
@@ -575,7 +575,7 @@ class Mission
 					special="NONE";
 					id=35;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_TeamLead";
+					vehicle="OPTRE_UNSC_Marine_TeamLead";
 					player="PLAY CDG";
 					skill=0.5;
 					description="Fireteam Leader";
@@ -587,7 +587,7 @@ class Mission
 					special="NONE";
 					id=36;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_Autorifleman";
+					vehicle="OPTRE_UNSC_Marine_Autorifleman";
 					player="PLAY CDG";
 					skill=0.44999999;
 					description="Fireteam Autorifleman";
@@ -599,7 +599,7 @@ class Mission
 					special="NONE";
 					id=37;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_Demolitions";
+					vehicle="OPTRE_UNSC_Marine_Demolitions";
 					player="PLAY CDG";
 					skill=0.40000001;
 					description="Fireteam Grenadier (Explosives)";
@@ -611,7 +611,7 @@ class Mission
 					special="NONE";
 					id=38;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_Rifleman_AT";
+					vehicle="OPTRE_UNSC_Marine_Rifleman_AT";
 					player="PLAY CDG";
 					skill=0.40000001;
 					description="Fireteam Missile Specialist";
@@ -623,7 +623,7 @@ class Mission
 					special="NONE";
 					id=39;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_TeamLead";
+					vehicle="OPTRE_UNSC_Marine_TeamLead";
 					player="PLAY CDG";
 					skill=0.5;
 					description="Fireteam Leader";
@@ -635,7 +635,7 @@ class Mission
 					special="NONE";
 					id=40;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_Demolitions";
+					vehicle="OPTRE_UNSC_Marine_Demolitions";
 					player="PLAY CDG";
 					skill=0.40000001;
 					description="Fireteam Grenadier (Explosives)";
@@ -647,7 +647,7 @@ class Mission
 					special="NONE";
 					id=41;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_Autorifleman";
+					vehicle="OPTRE_UNSC_Marine_Autorifleman";
 					player="PLAY CDG";
 					skill=0.44999999;
 					description="Fireteam Autorifleman";
@@ -659,7 +659,7 @@ class Mission
 					special="NONE";
 					id=42;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_Rifleman_AT";
+					vehicle="OPTRE_UNSC_Marine_Rifleman_AT";
 					player="PLAY CDG";
 					skill=0.40000001;
 					description="Fireteam Missile Specialist";
@@ -671,7 +671,7 @@ class Mission
 					special="NONE";
 					id=43;
 					side="WEST";
-					vehicle="TEI_UNSC_Army_D_Medic";
+					vehicle="OPTRE_UNSC_Army_D_Medic";
 					player="PLAY CDG";
 					skill=0.40000001;
 					description="Section Medic";
@@ -691,7 +691,7 @@ class Mission
 					special="NONE";
 					id=44;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_SquadLead";
+					vehicle="OPTRE_UNSC_Marine_SquadLead";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.2;
@@ -704,7 +704,7 @@ class Mission
 					special="NONE";
 					id=45;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_TeamLead";
+					vehicle="OPTRE_UNSC_Marine_TeamLead";
 					player="PLAY CDG";
 					skill=0.5;
 					description="Fireteam Leader";
@@ -716,7 +716,7 @@ class Mission
 					special="NONE";
 					id=46;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_Autorifleman";
+					vehicle="OPTRE_UNSC_Marine_Autorifleman";
 					player="PLAY CDG";
 					skill=0.44999999;
 					description="Fireteam Autorifleman";
@@ -728,7 +728,7 @@ class Mission
 					special="NONE";
 					id=47;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_Demolitions";
+					vehicle="OPTRE_UNSC_Marine_Demolitions";
 					player="PLAY CDG";
 					skill=0.40000001;
 					description="Fireteam Grenadier (Explosives)";
@@ -740,7 +740,7 @@ class Mission
 					special="NONE";
 					id=48;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_Rifleman_AT";
+					vehicle="OPTRE_UNSC_Marine_Rifleman_AT";
 					player="PLAY CDG";
 					skill=0.40000001;
 					description="Fireteam Missile Specialist";
@@ -752,7 +752,7 @@ class Mission
 					special="NONE";
 					id=49;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_TeamLead";
+					vehicle="OPTRE_UNSC_Marine_TeamLead";
 					player="PLAY CDG";
 					skill=0.5;
 					description="Fireteam Leader";
@@ -764,7 +764,7 @@ class Mission
 					special="NONE";
 					id=50;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_Demolitions";
+					vehicle="OPTRE_UNSC_Marine_Demolitions";
 					player="PLAY CDG";
 					skill=0.40000001;
 					description="Fireteam Grenadier (Explosives)";
@@ -776,7 +776,7 @@ class Mission
 					special="NONE";
 					id=51;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_Autorifleman";
+					vehicle="OPTRE_UNSC_Marine_Autorifleman";
 					player="PLAY CDG";
 					skill=0.44999999;
 					description="Fireteam Autorifleman";
@@ -788,7 +788,7 @@ class Mission
 					special="NONE";
 					id=52;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_Rifleman_AT";
+					vehicle="OPTRE_UNSC_Marine_Rifleman_AT";
 					player="PLAY CDG";
 					skill=0.40000001;
 					description="Fireteam Missile Specialist";
@@ -800,7 +800,7 @@ class Mission
 					special="NONE";
 					id=53;
 					side="WEST";
-					vehicle="TEI_UNSC_Army_D_Medic";
+					vehicle="OPTRE_UNSC_Army_D_Medic";
 					player="PLAY CDG";
 					skill=0.40000001;
 					description="Section Medic";
@@ -820,7 +820,7 @@ class Mission
 					special="NONE";
 					id=54;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_Pilot";
+					vehicle="OPTRE_UNSC_Marine_Pilot";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.40000001;
@@ -833,7 +833,7 @@ class Mission
 					special="NONE";
 					id=55;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_Pilot";
+					vehicle="OPTRE_UNSC_Marine_Pilot";
 					player="PLAY CDG";
 					skill=0.40000001;
 					description="Support Pilot/Crewman";
@@ -845,7 +845,7 @@ class Mission
 					special="NONE";
 					id=56;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_Pilot";
+					vehicle="OPTRE_UNSC_Marine_Pilot";
 					player="PLAY CDG";
 					skill=0.40000001;
 					description="Support Pilot/Crewman";
@@ -857,7 +857,7 @@ class Mission
 					special="NONE";
 					id=57;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_Pilot";
+					vehicle="OPTRE_UNSC_Marine_Pilot";
 					player="PLAY CDG";
 					skill=0.40000001;
 					description="Support Pilot/Crewman";
@@ -869,7 +869,7 @@ class Mission
 					special="NONE";
 					id=58;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_Pilot";
+					vehicle="OPTRE_UNSC_Marine_Pilot";
 					player="PLAY CDG";
 					skill=0.40000001;
 					description="Support Pilot/Crewman";
@@ -881,7 +881,7 @@ class Mission
 					special="NONE";
 					id=59;
 					side="WEST";
-					vehicle="TEI_UNSC_Marine_Pilot";
+					vehicle="OPTRE_UNSC_Marine_Pilot";
 					player="PLAY CDG";
 					skill=0.40000001;
 					description="Support Pilot/Crewman";
@@ -1065,7 +1065,7 @@ class Mission
 			position[]={15192.715,17.936954,17282.615};
 			id=70;
 			side="EMPTY";
-			vehicle="TEI_m1087_stallion_unsc";
+			vehicle="OPTRE_m1087_stallion_unsc";
 			skill=0.60000002;
 			init="_nul0 = [this,300,3600] call PO3_fnc_setObjectRespawn; _nul1 = [this] call PO3_fnc_setAsResupply;";
 		};
@@ -1095,7 +1095,7 @@ class Mission
 			azimut=135;
 			id=73;
 			side="EMPTY";
-			vehicle="TEI_M813_TT_black";
+			vehicle="OPTRE_M813_TT_black";
 			skill=0.60000002;
 			init="_nul0 = [this,300,3600] call PO3_fnc_setObjectRespawn;";
 		};
@@ -1105,7 +1105,7 @@ class Mission
 			azimut=225;
 			id=74;
 			side="EMPTY";
-			vehicle="TEI_M12A1_LRV";
+			vehicle="OPTRE_M12A1_LRV";
 			skill=0.60000002;
 			init="_nul0 = [this,300,3600] call PO3_fnc_setObjectRespawn;";
 		};
@@ -1125,7 +1125,7 @@ class Mission
 			azimut=135;
 			id=76;
 			side="EMPTY";
-			vehicle="TEI_M813_TT_black";
+			vehicle="OPTRE_M813_TT_black";
 			skill=0.60000002;
 			init="_nul0 = [this,300,3600] call PO3_fnc_setObjectRespawn;";
 		};
@@ -1136,7 +1136,7 @@ class Mission
 			offsetY=0.2;
 			id=77;
 			side="EMPTY";
-			vehicle="TEI_falcon_unarmed";
+			vehicle="OPTRE_falcon_black";
 			skill=0.60000002;
 			init="_nul0 = [this,300,3600] call PO3_fnc_setObjectRespawn;this addMagazineTurret [""6Rnd_Missile_AGM_02_F"",[-1]];this addWeaponTurret [""Missile_AGM_02_Plane_CAS_01_F"",[-1]];";
 		};
@@ -1147,7 +1147,7 @@ class Mission
 			offsetY=0.2;
 			id=78;
 			side="EMPTY";
-			vehicle="TEI_falcon_unarmed";
+			vehicle="OPTRE_falcon_black";
 			skill=0.60000002;
 			init="_nul0 = [this,300,3600] call PO3_fnc_setObjectRespawn;this addMagazineTurret [""6Rnd_Missile_AGM_02_F"",[-1]];this addWeaponTurret [""Missile_AGM_02_Plane_CAS_01_F"",[-1]];";
 		};
@@ -1157,7 +1157,7 @@ class Mission
 			azimut=87.784302;
 			id=79;
 			side="EMPTY";
-			vehicle="TEI_Pelican_unarmed_green";
+			vehicle="OPTRE_Pelican_unarmed_green";
 			skill=0.60000002;
 			init="_nul0 = [this,300,3600] call PO3_fnc_setObjectRespawn; _nul1 = [this] call PO3_fnc_setAsLiftChopper";
 		};
@@ -1167,7 +1167,7 @@ class Mission
 			azimut=63.324699;
 			id=80;
 			side="EMPTY";
-			vehicle="TEI_Pelican_unarmed_black";
+			vehicle="OPTRE_Pelican_unarmed_black";
 			skill=0.60000002;
 			init="_nul0 = [this,300,3600] call PO3_fnc_setObjectRespawn; _nul1 = [this] call PO3_fnc_setAsLiftChopper";
 		};
@@ -1178,9 +1178,9 @@ class Mission
 			offsetY=0.2;
 			id=81;
 			side="EMPTY";
-			vehicle="TEI_Pelican_armed_green";
+			vehicle="OPTRE_Pelican_armed_green";
 			skill=0.60000002;
-			init="_nul0 = [this,300,3600] call PO3_fnc_setObjectRespawn;this addMagazineTurret [""2000Rnd_20mm_shells"",[0]]; this addMagazineTurret [""38Rnd_80mm_rockets"",[-1]]; this addMagazineTurret [""500Rnd_127x99_mag_Tracer_Red"",[-1]]; this addMagazineTurret [""500Rnd_127x99_mag_Tracer_Red"",[-1]]; this addWeaponTurret [""TEI_M41_LAAG"",[-1]]; this addWeaponTurret [""rockets_Skyfire"",[-1]]; this addWeaponTurret [""gatling_20mm"",[0]];";
+			init="_nul0 = [this,300,3600] call PO3_fnc_setObjectRespawn;this addMagazineTurret [""2000Rnd_20mm_shells"",[0]]; this addMagazineTurret [""38Rnd_80mm_rockets"",[-1]]; this addMagazineTurret [""500Rnd_127x99_mag_Tracer_Red"",[-1]]; this addMagazineTurret [""500Rnd_127x99_mag_Tracer_Red"",[-1]]; this addWeaponTurret [""OPTRE_M41_LAAG"",[-1]]; this addWeaponTurret [""rockets_Skyfire"",[-1]]; this addWeaponTurret [""gatling_20mm"",[0]];";
 		};
 		class Item15
 		{
@@ -1208,7 +1208,7 @@ class Mission
 			azimut=225;
 			id=84;
 			side="EMPTY";
-			vehicle="TEI_M12A1_LRV";
+			vehicle="OPTRE_M12A1_LRV";
 			skill=0.60000002;
 			init="_nul0 = [this,300,3600] call PO3_fnc_setObjectRespawn;";
 		};
@@ -1229,7 +1229,7 @@ class Mission
 			azimut=-317.48199;
 			id=86;
 			side="EMPTY";
-			vehicle="TEI_m1015_mule_unsc";
+			vehicle="OPTRE_m1015_mule_unsc";
 			lock="LOCKED";
 			skill=0.60000002;
 			init="_nul0 = [this,10,10] call PO3_fnc_setObjectRespawn; _nul1 = [this] call PO3_fnc_setAsResupply;";
@@ -1260,7 +1260,7 @@ class Mission
 			azimut=-224.321;
 			id=89;
 			side="EMPTY";
-			vehicle="TEI_m1087_stallion_unsc";
+			vehicle="OPTRE_m1087_stallion_unsc";
 			lock="LOCKED";
 			skill=0.60000002;
 			init="_nul0 = [this,20,20] call PO3_fnc_setObjectRespawn; _nul1 = [this] call PO3_fnc_setAsResupply;";
@@ -1333,7 +1333,7 @@ class Mission
 			offsetY=0.2;
 			id=96;
 			side="EMPTY";
-			vehicle="TEI_falcon_unarmed";
+			vehicle="OPTRE_falcon_black";
 			skill=0.60000002;
 			init="_nul0 = [this,300,3600] call PO3_fnc_setObjectRespawn;this addMagazineTurret [""6Rnd_Missile_AGM_02_F"",[-1]];this addWeaponTurret [""Missile_AGM_02_Plane_CAS_01_F"",[-1]];";
 		};
@@ -1353,7 +1353,7 @@ class Mission
 			azimut=225;
 			id=98;
 			side="EMPTY";
-			vehicle="TEI_M813_TT";
+			vehicle="OPTRE_M813_TT";
 			skill=0.60000002;
 			init="_nul0 = [this,300,3600] call PO3_fnc_setObjectRespawn;";
 		};
@@ -1363,7 +1363,7 @@ class Mission
 			azimut=225;
 			id=99;
 			side="EMPTY";
-			vehicle="TEI_M813_TT";
+			vehicle="OPTRE_M813_TT";
 			skill=0.60000002;
 			init="_nul0 = [this,300,3600] call PO3_fnc_setObjectRespawn;";
 		};
@@ -1373,7 +1373,7 @@ class Mission
 			azimut=225;
 			id=100;
 			side="EMPTY";
-			vehicle="TEI_M12G1_LRV";
+			vehicle="OPTRE_M12G1_LRV";
 			skill=0.60000002;
 			init="_nul0 = [this,300,3600] call PO3_fnc_setObjectRespawn;";
 		};
@@ -1559,7 +1559,7 @@ class Mission
 			azimut=225;
 			id=117;
 			side="EMPTY";
-			vehicle="TEI_M12G1_LRV";
+			vehicle="OPTRE_M12G1_LRV";
 			skill=0.60000002;
 			init="_nul0 = [this,300,3600] call PO3_fnc_setObjectRespawn;";
 		};
@@ -1817,7 +1817,7 @@ class Mission
 			azimut=45;
 			id=143;
 			side="EMPTY";
-			vehicle="TEI_M12_LRV";
+			vehicle="OPTRE_M12_LRV";
 			skill=0.60000002;
 			init="_nul0 = [this,300,3600] call PO3_fnc_setObjectRespawn;";
 		};
@@ -1828,7 +1828,7 @@ class Mission
 			offsetY=0.5;
 			id=144;
 			side="EMPTY";
-			vehicle="TEI_M12_LRV";
+			vehicle="OPTRE_M12_LRV";
 			skill=0.60000002;
 			init="_nul0 = [this,300,3600] call PO3_fnc_setObjectRespawn;";
 		};
@@ -1838,7 +1838,7 @@ class Mission
 			azimut=44.224998;
 			id=145;
 			side="EMPTY";
-			vehicle="TEI_M12R_AA";
+			vehicle="OPTRE_M12R_AA";
 			skill=0.60000002;
 			init="_nul0 = [this,300,3600] call PO3_fnc_setObjectRespawn;";
 		};
@@ -1848,7 +1848,7 @@ class Mission
 			azimut=-314.91901;
 			id=146;
 			side="EMPTY";
-			vehicle="TEI_M12R_AA";
+			vehicle="OPTRE_M12R_AA";
 			skill=0.60000002;
 			init="_nul0 = [this,300,3600] call PO3_fnc_setObjectRespawn;";
 		};
@@ -1859,7 +1859,7 @@ class Mission
 			offsetY=0.5;
 			id=147;
 			side="EMPTY";
-			vehicle="TEI_M813_TT";
+			vehicle="OPTRE_M813_TT";
 			skill=0.60000002;
 			init="_nul0 = [this,300,3600] call PO3_fnc_setObjectRespawn;";
 		};
@@ -2098,7 +2098,7 @@ class Mission
 			special="NONE";
 			id=171;
 			side="EMPTY";
-			vehicle="TEI_ammo_rack";
+			vehicle="OPTRE_ammo_rack";
 			leader=1;
 			skill=0.60000002;
 			init="this allowDamage false; this addAction[""<t color='#111111'>Gear Select</t>"", ""execvm 'ASORGS\open.sqf'""];";
@@ -2110,7 +2110,7 @@ class Mission
 			special="NONE";
 			id=172;
 			side="EMPTY";
-			vehicle="TEI_weapon_rack";
+			vehicle="OPTRE_weapon_rack";
 			leader=1;
 			skill=0.60000002;
 			init="this allowDamage false; this addAction[""<t color='#111111'>Gear Select</t>"", ""execvm 'ASORGS\open.sqf'""];";
@@ -2122,7 +2122,7 @@ class Mission
 			special="NONE";
 			id=173;
 			side="EMPTY";
-			vehicle="TEI_item_rack";
+			vehicle="OPTRE_item_rack";
 			leader=1;
 			skill=0.60000002;
 			init="this allowDamage false; this addAction[""<t color='#111111'>Gear Select</t>"", ""execvm 'ASORGS\open.sqf'""];";
@@ -2134,11 +2134,11 @@ class Mission
 			special="NONE";
 			id=174;
 			side="EMPTY";
-			vehicle="TEI_holotable";
+			vehicle="OPTRE_holotable";
 			leader=1;
 			lock="UNLOCKED";
 			skill=0.60000002;
-			init="this addaction [(""<t color=""""#81BEF7"""">"" + (""Request Orbital Insertion"") +""</t>""), TEI_HEV_fnc_podCallSelf, """", 7, true, true, """", """"];this allowDamage false;this setVariable ['PO3_redeploy',true];";
+			init="this addaction [(""<t color=""""#81BEF7"""">"" + (""Request Orbital Insertion"") +""</t>""), OPTRE_HEV_fnc_podCallSelf, """", 7, true, true, """", """"];this allowDamage false;this setVariable ['PO3_redeploy',true];";
 		};
 		class Item108
 		{
@@ -2147,7 +2147,7 @@ class Mission
 			special="NONE";
 			id=175;
 			side="EMPTY";
-			vehicle="TEI_soldier_grave";
+			vehicle="OPTRE_soldier_grave";
 			leader=1;
 			lock="UNLOCKED";
 			skill=0.60000002;
@@ -2160,7 +2160,7 @@ class Mission
 			special="NONE";
 			id=176;
 			side="EMPTY";
-			vehicle="TEI_odst_grave";
+			vehicle="OPTRE_odst_grave";
 			leader=1;
 			lock="UNLOCKED";
 			skill=0.60000002;
@@ -2545,7 +2545,7 @@ class Mission
 			special="FLY";
 			id=206;
 			side="EMPTY";
-			vehicle="TEI_final_dawn";
+			vehicle="OPTRE_final_dawn";
 			skill=0.60000002;
 			init="this allowdamage false;";
 		};
@@ -2554,7 +2554,7 @@ class Mission
 			position[]={15197.018,17.940001,17286.797};
 			id=207;
 			side="EMPTY";
-			vehicle="TEI_m1087_stallion_unsc";
+			vehicle="OPTRE_m1087_stallion_unsc";
 			skill=0.60000002;
 			init="_nul0 = [this,300,3600] call PO3_fnc_setObjectRespawn; _nul1 = [this] call PO3_fnc_setAsResupply;";
 		};
@@ -2563,7 +2563,7 @@ class Mission
 			position[]={15201.438,17.940001,17290.861};
 			id=208;
 			side="EMPTY";
-			vehicle="TEI_m1087_stallion_unsc";
+			vehicle="OPTRE_m1087_stallion_unsc";
 			skill=0.60000002;
 			init="_nul0 = [this,300,3600] call PO3_fnc_setObjectRespawn; _nul1 = [this] call PO3_fnc_setAsResupply;";
 		};
