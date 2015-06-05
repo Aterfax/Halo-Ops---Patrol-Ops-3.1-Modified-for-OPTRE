@@ -19,6 +19,7 @@
 #define BOX_SPACING ((FULLCOMBO_WIDTH - BOX_COMBO_WIDTH*5) / 4)
 #define MULTI_COMBO_WIDTH (TOTAL_WIDTH - DIALOG_MARGIN - (CATEGORY_SPACING*5) - LABEL_WIDTH - ITEM_WIDTH*3)
 #define SAVE_WIDTH (TOTAL_WIDTH - DIALOG_MARGIN - CATEGORY_SPACING*2 - LABEL_WIDTH - MULTI_COMBO_WIDTH)
+#define LEFT_START (safezoneX)
 
 /*	class primaryWeaponAmmoCombo : ASORGS_AmmoCombo 
 	{
@@ -90,7 +91,7 @@ class NAME##Combo : ASORGS_FullCombo \
 class ASORGS_FieldLabel : ASORGS_RscText
 {
 	style = 0x01;//ST_RIGHT
-	x = safezoneX + DIALOG_MARGIN;
+	x = LEFT_START + DIALOG_MARGIN;
 	h = ITEM_HEIGHT;
 	w = LABEL_WIDTH - DIALOG_MARGIN;
 	sizeEx = TEXT_SIZE;
@@ -101,7 +102,7 @@ class ASORGS_FieldLabelHeading : ASORGS_FieldLabel
 };
 class ASORGS_FullCombo : ASORGS_RscCombo
 {
-	x = safezoneX + DIALOG_MARGIN + LABEL_WIDTH;
+	x = LEFT_START + DIALOG_MARGIN + LABEL_WIDTH;
 	w = FULLCOMBO_WIDTH;
 	h = ITEM_HEIGHT;
 	soundExpand[] = {"", 0.0, 1};
@@ -115,6 +116,7 @@ class ASORGS_FullCombo : ASORGS_RscCombo
 	colorBox[] = {1,1,1,1};
 	colorBorder[] = {1,1,1,1};
 	colorPicture[] = {1,1,1,1};
+	colorPictureRight[] = {1,1,1,1};
 	colorPictureDisabled[] = {1,1,1,1};
 	colorPictudeDisabled[] = {1,1,1,1};
 	colorPictureSelected[] = {1,1,1,1};
@@ -124,7 +126,7 @@ class ASORGS_FullCombo : ASORGS_RscCombo
 };
 class ASORGS_BoxCombo : ASORGS_RscCombo
 {
-	x = safezoneX + DIALOG_MARGIN + LABEL_WIDTH;
+	x = LEFT_START + DIALOG_MARGIN + LABEL_WIDTH;
 	soundExpand[] = {"", 0.0, 1};
 	soundCollapse[] = {"", 0.0, 1};
 	//need to work out wtf this does
@@ -154,7 +156,7 @@ class ASORGS_AmmoCombo : ASORGS_FullCombo
 
 class ASORGS_MinusButton :ASORGS_RscShortcutButton
 {
-	x = safezoneX + (TOTAL_WIDTH - DIALOG_MARGIN - CATEGORY_SPACING*3 - ITEM_WIDTH*3);
+	x = LEFT_START + (TOTAL_WIDTH - DIALOG_MARGIN - CATEGORY_SPACING*3 - ITEM_WIDTH*3);
 
 	//text= "ASORGS\images\minus_ca.paa";
 	textureNoShortcut =  "ASORGS\images\minus_ca.paa";
@@ -202,7 +204,7 @@ class ASORGS_CountText : ASORGS_RscButton
 	style = ST_CENTER;
 	w = ITEM_WIDTH + CATEGORY_SPACING*3;
 	h = ITEM_HEIGHT;
-	x = safezoneX + (TOTAL_WIDTH - DIALOG_MARGIN - ITEM_HEIGHT*2 - CATEGORY_SPACING);
+	x = LEFT_START + (TOTAL_WIDTH - DIALOG_MARGIN - ITEM_HEIGHT*2 - CATEGORY_SPACING);
 	onSetFocus = "_this spawn ASORGS_fnc_numberSelected;";
 	sizeEx = TEXT_SIZE;
 	colorBackground[] = {0.3, 0.3, 0.3, 1};
@@ -215,7 +217,7 @@ class ASORGS_CountTextBoxBG : ASORGS_RscText
 	text="";
 	w = ITEM_HEIGHT;
 	h = ITEM_HEIGHT;
-	x = safezoneX + (TOTAL_WIDTH - DIALOG_MARGIN - ITEM_HEIGHT*2);
+	x = LEFT_START + (TOTAL_WIDTH - DIALOG_MARGIN - ITEM_HEIGHT*2);
 	colorBackground[] = {1,1,1,1};
 	colorText[] = {0,1,0,1};
 	colorDisabled[] = {1,1,1,1};
@@ -238,7 +240,7 @@ class ASORGS_CountTextBox : ASORGS_RscEdit
 	text="20";
 	w = ITEM_HEIGHT;
 	h = ITEM_HEIGHT;
-	x = safezoneX + (TOTAL_WIDTH - DIALOG_MARGIN - ITEM_HEIGHT*2);
+	x = LEFT_START + (TOTAL_WIDTH - DIALOG_MARGIN - ITEM_HEIGHT*2);
 	colorBackground[] = {1,1,1,1};
 	colorText[] = {0,0,0,1};
 	colorDisabled[] = {1,1,1,1};
@@ -257,7 +259,7 @@ class ASORGS_CountTextBox : ASORGS_RscEdit
 class ASORGS_PlusButton :ASORGS_MinusButton
 {
 	textureNoShortcut =  "ASORGS\images\plus_ca.paa";
-	x = safezoneX + (TOTAL_WIDTH - ITEM_HEIGHT*(3/4)) - DIALOG_MARGIN;
+	x = LEFT_START + (TOTAL_WIDTH - ITEM_HEIGHT*(3/4)) - DIALOG_MARGIN;
 	onButtonClick = "_this spawn ASORGS_fnc_PressPlus; false";
 };
 class ASORGS_Main_Dialog {
@@ -281,7 +283,7 @@ class ASORGS_Main_Dialog {
 			colorBorder[] = {1,1,1,1};
 			style=ST_FRAME;
 			idc = 399999;
-			x = safezoneX;
+			x = LEFT_START;
 			y = safezoneY;
 			w = TOTAL_WIDTH;
 			h = PRESET_SIZE;
@@ -322,7 +324,7 @@ class ASORGS_Main_Dialog {
 			text = "SAVE";
 			h = ITEM_HEIGHT;
 			w = SAVE_WIDTH;
-			x = safezoneX + TOTAL_WIDTH - (SAVE_WIDTH) - (DIALOG_MARGIN);
+			x = LEFT_START + TOTAL_WIDTH - (SAVE_WIDTH) - (DIALOG_MARGIN);
 			y = TOP + (ITEM_HEIGHT*0) ; 
 			onButtonClick = "createDialog ""ASORGS_SaveDialog"";";
 			colorBackground[] = {1, 1, 1, 1};
@@ -360,7 +362,9 @@ class ASORGS_Main_Dialog {
 		SINGLECOMBO(primaryWeaponRail, 420071,   TOP + CATEGORY_SPACING + (ITEM_HEIGHT+ ITEM_SPACING)*2 );
 		LABEL(primaryWeaponSuppressor, 420080,  TOP + CATEGORY_SPACING + (ITEM_HEIGHT + ITEM_SPACING)*2, "Suppressor");
 		SINGLECOMBO(primaryWeaponSuppressor, 420081,  TOP + CATEGORY_SPACING + (ITEM_HEIGHT + ITEM_SPACING)*2);
-
+		LABEL(primaryWeaponBipod, 428000,  TOP + CATEGORY_SPACING + (ITEM_HEIGHT + ITEM_SPACING)*2, "Bipod");
+		SINGLECOMBO(primaryWeaponBipod, 428001,  TOP + CATEGORY_SPACING + (ITEM_HEIGHT + ITEM_SPACING)*2);
+		
 		HEADING(launcher, 420090, TOP + (CATEGORY_SPACING * 2) + (ITEM_HEIGHT + ITEM_SPACING)*3, "Launcher");
 		SINGLECOMBO(launcher, 420091, TOP + (CATEGORY_SPACING * 2) + (ITEM_HEIGHT + ITEM_SPACING)*3);
 		LABEL(launcherAmmo, 420100,  TOP + (CATEGORY_SPACING * 2) + (ITEM_HEIGHT + ITEM_SPACING)*3, "Ammo")
@@ -384,6 +388,9 @@ class ASORGS_Main_Dialog {
 		SINGLECOMBO(handgunScope, 420221, TOP + (CATEGORY_SPACING * 3) + (ITEM_HEIGHT + ITEM_SPACING)*4);
 		LABEL(handgunSuppressor, 420230, TOP + (CATEGORY_SPACING * 3) + (ITEM_HEIGHT + ITEM_SPACING)*4, "Suppressor");
 		SINGLECOMBO(handgunSuppressor, 420231, TOP + (CATEGORY_SPACING * 3) + (ITEM_HEIGHT + ITEM_SPACING)*4);
+		LABEL(handgunBipod, 428010,  TOP + CATEGORY_SPACING + (ITEM_HEIGHT + ITEM_SPACING)*2, "Bipod");
+		SINGLECOMBO(handgunBipod, 428011,  TOP + CATEGORY_SPACING + (ITEM_HEIGHT + ITEM_SPACING)*2);
+		
 		
 		HEADING(grenade, 420300, TOP + (CATEGORY_SPACING * 4) + (ITEM_HEIGHT + ITEM_SPACING)*5, "Grenades");
 		MULTICOMBO(grenade1, 420301, TOP + (CATEGORY_SPACING * 4) + (ITEM_HEIGHT + ITEM_SPACING)*5);
@@ -463,35 +470,40 @@ class ASORGS_Main_Dialog {
 		MULTICOMBO(medical20, 420591, TOP + (CATEGORY_SPACING * 9) + (ITEM_HEIGHT + ITEM_SPACING)*17); 
 		
 		
-		HEADING(misc, 420600, TOP + (CATEGORY_SPACING * 10) + (ITEM_HEIGHT + ITEM_SPACING)*18, "Misc"); 
-		MULTICOMBO(misc1, 420601, TOP + (CATEGORY_SPACING * 10) + (ITEM_HEIGHT + ITEM_SPACING)*18); 
-		MULTICOMBO(misc2, 420611, TOP + (CATEGORY_SPACING * 10) + (ITEM_HEIGHT + ITEM_SPACING)*18); 
-		MULTICOMBO(misc3, 420621, TOP + (CATEGORY_SPACING * 10) + (ITEM_HEIGHT + ITEM_SPACING)*18); 
-		MULTICOMBO(misc4, 420631, TOP + (CATEGORY_SPACING * 10) + (ITEM_HEIGHT + ITEM_SPACING)*18); 
-		MULTICOMBO(misc5, 420641, TOP + (CATEGORY_SPACING * 10) + (ITEM_HEIGHT + ITEM_SPACING)*18); 
+		HEADING(misc, 420800, TOP + (CATEGORY_SPACING * 10) + (ITEM_HEIGHT + ITEM_SPACING)*18, "Misc"); 
+		MULTICOMBO(misc1, 420801, TOP + (CATEGORY_SPACING * 10) + (ITEM_HEIGHT + ITEM_SPACING)*18); 
+		MULTICOMBO(misc2, 420811, TOP + (CATEGORY_SPACING * 10) + (ITEM_HEIGHT + ITEM_SPACING)*18); 
+		MULTICOMBO(misc3, 420821, TOP + (CATEGORY_SPACING * 10) + (ITEM_HEIGHT + ITEM_SPACING)*18); 
+		MULTICOMBO(misc4, 420831, TOP + (CATEGORY_SPACING * 10) + (ITEM_HEIGHT + ITEM_SPACING)*18); 
+		MULTICOMBO(misc5, 420841, TOP + (CATEGORY_SPACING * 10) + (ITEM_HEIGHT + ITEM_SPACING)*18); 
+		MULTICOMBO(misc6, 420851, TOP + (CATEGORY_SPACING * 10) + (ITEM_HEIGHT + ITEM_SPACING)*18); 
+		MULTICOMBO(misc7, 420861, TOP + (CATEGORY_SPACING * 10) + (ITEM_HEIGHT + ITEM_SPACING)*18); 
+		MULTICOMBO(misc8, 420871, TOP + (CATEGORY_SPACING * 10) + (ITEM_HEIGHT + ITEM_SPACING)*18); 
+		MULTICOMBO(misc9, 420881, TOP + (CATEGORY_SPACING * 10) + (ITEM_HEIGHT + ITEM_SPACING)*18); 
+		MULTICOMBO(misc10, 420891, TOP + (CATEGORY_SPACING * 10) + (ITEM_HEIGHT + ITEM_SPACING)*18); 
 		
 		//===========================================================================================Equipped
 		HEADING(equipped, 400099, (TOP + (CATEGORY_SPACING * 11) + (ITEM_HEIGHT + ITEM_SPACING)*19), "Equipped" );
 		class MapCombo : ASORGS_BoxCombo {
 			idc= 400100;
-			x=safezoneX + DIALOG_MARGIN + LABEL_WIDTH; 
+			x=LEFT_START + DIALOG_MARGIN + LABEL_WIDTH; 
 			y=TOP + (CATEGORY_SPACING * 11) + (ITEM_HEIGHT + ITEM_SPACING)*19);
 		};
 		class GPSCombo : MapCombo {
 			idc= 400101;
-			x=safezoneX + DIALOG_MARGIN + LABEL_WIDTH + (BOX_COMBO_WIDTH + BOX_SPACING);
+			x=LEFT_START + DIALOG_MARGIN + LABEL_WIDTH + (BOX_COMBO_WIDTH + BOX_SPACING);
 		};
 		class RadioCombo : MapCombo {
 			idc= 400102;
-			x=safezoneX + DIALOG_MARGIN + LABEL_WIDTH + (BOX_COMBO_WIDTH + BOX_SPACING) * 2;
+			x=LEFT_START + DIALOG_MARGIN + LABEL_WIDTH + (BOX_COMBO_WIDTH + BOX_SPACING) * 2;
 		};
 		class CompassCombo : MapCombo {
 			idc= 400103;
-			x=safezoneX + DIALOG_MARGIN + LABEL_WIDTH + (BOX_COMBO_WIDTH + BOX_SPACING) * 3;
+			x=LEFT_START + DIALOG_MARGIN + LABEL_WIDTH + (BOX_COMBO_WIDTH + BOX_SPACING) * 3;
 		};
 		class WatchCombo : MapCombo {
 			idc= 400104;
-			x=safezoneX  + DIALOG_MARGIN + LABEL_WIDTH + (BOX_COMBO_WIDTH + BOX_SPACING) * 4;
+			x=LEFT_START  + DIALOG_MARGIN + LABEL_WIDTH + (BOX_COMBO_WIDTH + BOX_SPACING) * 4;
 		};
 		class rotateDragThing : ASORGS_RscPicture
 		{
@@ -502,7 +514,7 @@ class ASORGS_Main_Dialog {
 				font = "PuristaMedium";
 			onMouseButtonDown = "_this spawn ASORGS_fnc_RotateCloneStart";
 			onMouseButtonUp = "_this spawn ASORGS_fnc_RotateCloneStop";
-			onMouseZChanged = "_this spawn ASORGS_fnc_Zoom";
+			onMouseZChanged = "_this spawn ASORGS_fnc_Zoom"; 
 			//onMouseEnter="[1] spawn ASORGS_fnc_RotateClone";
 			//onMouseExit="[0] spawn ASORGS_fnc_RotateCloneStop";
 			colorText[] = {0,0,0,0};
@@ -522,10 +534,10 @@ class ASORGS_Main_Dialog {
 			soundPush[] = {"\A3\ui_f\data\Sound\RscButtonMenu\soundPush", 0.0, 0};
 			soundClick[] = {"\A3\ui_f\data\Sound\RscButtonMenu\soundClick", 0.07, 1};
 			soundEscape[] = {"\A3\ui_f\data\Sound\RscButtonMenu\soundEscape", 0.09, 1};
-			w=safezoneW - TOTAL_WIDTH - ITEM_HEIGHT*2; //remove item height so it doesn't overlap the close button
+			w=safezoneW - TOTAL_WIDTH - ITEM_HEIGHT*2 - ( LEFT_START - safezoneX); //remove item height so it doesn't overlap the close button
 			h=safezoneH;
 			y=safezoneY;
-			x=safezoneX + TOTAL_WIDTH;
+			x= LEFT_START + TOTAL_WIDTH;
 		};
 		
 		
@@ -534,7 +546,7 @@ class ASORGS_Main_Dialog {
 			idc = 426000;
 			h=ITEM_HEIGHT;
 			w = TOTAL_WIDTH*0.3333;
-			x=safezoneX;
+			x=LEFT_START;
 			y=safezoneY + safezoneH - ITEM_HEIGHT;
 			texture = "";
 			colorFrame[] = {1,1,1,1};
@@ -545,7 +557,7 @@ class ASORGS_Main_Dialog {
 			idc = 426001;
 			h=ITEM_HEIGHT;
 			w = TOTAL_WIDTH*0.3333;
-			x=safezoneX + (TOTAL_WIDTH*0.3333);
+			x=LEFT_START + (TOTAL_WIDTH*0.3333);
 			y=safezoneY + safezoneH - ITEM_HEIGHT;
 		};
 		class progressBarBackpack : progressBarUniform
@@ -553,7 +565,7 @@ class ASORGS_Main_Dialog {
 			idc = 426002;
 			h=ITEM_HEIGHT;
 			w = TOTAL_WIDTH*0.3333;
-			x=safezoneX + (TOTAL_WIDTH*0.3333)*2;
+			x=LEFT_START + (TOTAL_WIDTH*0.3333)*2;
 			y=safezoneY + safezoneH - ITEM_HEIGHT;
 		};
 		class tooltipBarUniform : ASORGS_RscButtonMenu
@@ -561,7 +573,7 @@ class ASORGS_Main_Dialog {
 			idc = 426003;
 			h=ITEM_HEIGHT;
 			w = TOTAL_WIDTH*0.3333;
-			x=safezoneX;
+			x=LEFT_START;
 			y=safezoneY + safezoneH - ITEM_HEIGHT;
 			texture = "";
 			style = "0x02 + 0xC0";
@@ -589,7 +601,7 @@ class ASORGS_Main_Dialog {
 			idc = 426004;
 			h=ITEM_HEIGHT;
 			w = TOTAL_WIDTH*0.3333;
-			x=safezoneX + (TOTAL_WIDTH*0.3333);
+			x=LEFT_START + (TOTAL_WIDTH*0.3333);
 			y=safezoneY + safezoneH - ITEM_HEIGHT;
 		};
 		class tooltipBarBackpack : tooltipBarUniform
@@ -597,7 +609,7 @@ class ASORGS_Main_Dialog {
 			idc = 426005;
 			h=ITEM_HEIGHT;
 			w = TOTAL_WIDTH*0.3333;
-			x=safezoneX + (TOTAL_WIDTH*0.3333)*2;
+			x=LEFT_START + (TOTAL_WIDTH*0.3333)*2;
 			y=safezoneY + safezoneH - ITEM_HEIGHT;
 		};
 		class progressBarWeight : ASORGS_RscProgress
@@ -605,7 +617,7 @@ class ASORGS_Main_Dialog {
 			idc = 427000;
 			h=CATEGORY_SPACING*2;
 			w = TOTAL_WIDTH;
-			x=safezoneX;
+			x=LEFT_START;
 			y=safezoneY + safezoneH - ITEM_HEIGHT - CATEGORY_SPACING*2;
 			texture = "";
 			colorFrame[] = {1,1,1,1};
@@ -616,7 +628,7 @@ class ASORGS_Main_Dialog {
 			idc = 427001;
 			h=CATEGORY_SPACING*2;
 			w = TOTAL_WIDTH;
-			x=safezoneX;
+			x=LEFT_START;
 			y=safezoneY + safezoneH - ITEM_HEIGHT - CATEGORY_SPACING*2;
 		};
 		class closeButton : ASORGS_PlusButton {
@@ -625,7 +637,7 @@ class ASORGS_Main_Dialog {
 			onButtonClick = "closeDialog 0;";
 			w = ITEM_WIDTH*2;
 			h = ITEM_HEIGHT*2;
-			x = safezoneX +safezoneW - ITEM_WIDTH*2;
+			x = safezoneX +safezoneW - ITEM_WIDTH*2 - (LEFT_START-safezoneX);
 			y = safezoneY;
 			class ShortcutPos{
 				left=0;
@@ -657,7 +669,7 @@ class ASORGS_SaveDialog {
 		class Title : ASORGS_RscTitle {
 			idc=-1;
 			text = "Save Preset";
-			x = safezoneX + DIALOG_MARGIN;
+			x = LEFT_START + DIALOG_MARGIN;
 			y = TOP;
 			w = TOTAL_WIDTH - DIALOG_MARGIN;
 		};
@@ -665,13 +677,13 @@ class ASORGS_SaveDialog {
 			idc = -1;
 			text = "Select a slot:";
 			y= TOP + (ITEM_HEIGHT*2);
-			x = safezoneX + DIALOG_MARGIN;
+			x = LEFT_START + DIALOG_MARGIN;
 			w = TOTAL_WIDTH - DIALOG_MARGIN;
 			h = ITEM_HEIGHT;
 		};
 		class SaveSlotsList : ASORGS_RscListBox {
 			idc = 421000;
-			x = safezoneX + DIALOG_MARGIN;
+			x = LEFT_START + DIALOG_MARGIN;
 			y = TOP + (ITEM_HEIGHT*3);
 			w = TOTAL_WIDTH - (DIALOG_MARGIN*2);
 			h = SAVE_LIST_HEIGHT;
@@ -680,7 +692,7 @@ class ASORGS_SaveDialog {
 		class EnterNameLabel: ASORGS_RscText {
 			idc = -1;
 			text = "Preset Name:";
-			x = safezoneX + DIALOG_MARGIN;
+			x = LEFT_START + DIALOG_MARGIN;
 			y = TOP + (ITEM_HEIGHT*3) + SAVE_LIST_HEIGHT + CATEGORY_SPACING;
 			w = LABEL_WIDTH;
 			h = ITEM_HEIGHT;
@@ -688,7 +700,7 @@ class ASORGS_SaveDialog {
 		class EnterNameTextbox: ASORGS_RscEdit {
 			idc = 421001;
 			text = "New Preset";
-			x = safezoneX + DIALOG_MARGIN + LABEL_WIDTH + (DIALOG_MARGIN *2);
+			x = LEFT_START + DIALOG_MARGIN + LABEL_WIDTH + (DIALOG_MARGIN *2);
 			y = TOP + (ITEM_HEIGHT*3) + CATEGORY_SPACING + SAVE_LIST_HEIGHT;
 			w = TOTAL_WIDTH - LABEL_WIDTH - (DIALOG_MARGIN*4);
 			h = ITEM_HEIGHT;
@@ -696,7 +708,7 @@ class ASORGS_SaveDialog {
 		class CancelButton : ASORGS_RscButtonMenu {
 			idd = 421002;
 			text = "Cancel";
-			x = safezoneX + DIALOG_MARGIN;
+			x = LEFT_START + DIALOG_MARGIN;
 			y = TOP + (ITEM_HEIGHT*4) + (CATEGORY_SPACING*2) + SAVE_LIST_HEIGHT;
 			w = (TOTAL_WIDTH / 3) - ((DIALOG_MARGIN/2)*2) - DIALOG_MARGIN;
 			h = ITEM_HEIGHT;
@@ -705,7 +717,7 @@ class ASORGS_SaveDialog {
 		class DeleteButton : ASORGS_RscButtonMenu {
 			idd = 421004;
 			text = "Delete";
-			x = safezoneX + (TOTAL_WIDTH / 3) + ((DIALOG_MARGIN/2)*2);
+			x = LEFT_START + (TOTAL_WIDTH / 3) + ((DIALOG_MARGIN/2)*2);
 			y = TOP + (ITEM_HEIGHT*4) + (CATEGORY_SPACING*2) + SAVE_LIST_HEIGHT;
 			w = (TOTAL_WIDTH / 3) - ((DIALOG_MARGIN/2)*2) - DIALOG_MARGIN;
 			h = ITEM_HEIGHT;
@@ -714,7 +726,7 @@ class ASORGS_SaveDialog {
 		class SaveButton : ASORGS_RscButtonMenu {
 			idc = 421003;
 			text = "Save";
-			x = safezoneX + ((TOTAL_WIDTH / 3)*2) + ((DIALOG_MARGIN/2)*2);
+			x = LEFT_START + ((TOTAL_WIDTH / 3)*2) + ((DIALOG_MARGIN/2)*2);
 			y = TOP + (ITEM_HEIGHT*4) + (CATEGORY_SPACING*2) + SAVE_LIST_HEIGHT;
 			w = (TOTAL_WIDTH / 3) - ((DIALOG_MARGIN/2)*2) - DIALOG_MARGIN;
 			h = ITEM_HEIGHT;
@@ -734,7 +746,7 @@ class ASORGS_ConfirmDeleteDialog {
 		class Title : ASORGS_RscTitle {
 			idc=-1;
 			text = "Delete Preset";
-			x = safezoneX + DIALOG_MARGIN;
+			x = LEFT_START + DIALOG_MARGIN;
 			y = TOP;
 			w = TOTAL_WIDTH - DIALOG_MARGIN;
 		};
@@ -742,14 +754,14 @@ class ASORGS_ConfirmDeleteDialog {
 			idc = 422001;
 			text = "Are you sure you want to delete the preset?";
 			y= TOP + (ITEM_HEIGHT*2);
-			x = safezoneX + DIALOG_MARGIN;
+			x = LEFT_START + DIALOG_MARGIN;
 			w = TOTAL_WIDTH - DIALOG_MARGIN;
 			h = ITEM_HEIGHT;
 		};
 		class CancelButton : ASORGS_RscButtonMenu {
 			idd = 422002;
 			text = "Cancel";
-			x = safezoneX + DIALOG_MARGIN;
+			x = LEFT_START + DIALOG_MARGIN;
 			y = TOP + (ITEM_HEIGHT*4) + (CATEGORY_SPACING*2);
 			w = (TOTAL_WIDTH / 2) - ((DIALOG_MARGIN/2)*2) - DIALOG_MARGIN;
 			h = ITEM_HEIGHT;
@@ -759,7 +771,7 @@ class ASORGS_ConfirmDeleteDialog {
 		class DeleteButton : ASORGS_RscButtonMenu {
 			idd = 422003;
 			text = "Delete";
-			x = safezoneX + (TOTAL_WIDTH / 3) + ((DIALOG_MARGIN/2)*2);
+			x = LEFT_START + (TOTAL_WIDTH / 3) + ((DIALOG_MARGIN/2)*2);
 			y = TOP + (ITEM_HEIGHT*4) + (CATEGORY_SPACING*2);
 			w = (TOTAL_WIDTH / 2) - ((DIALOG_MARGIN/2)*2) - DIALOG_MARGIN;
 			h = ITEM_HEIGHT;

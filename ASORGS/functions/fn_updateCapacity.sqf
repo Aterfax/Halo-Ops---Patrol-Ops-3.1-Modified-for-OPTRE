@@ -1,5 +1,6 @@
 #include "macro.sqf"
 disableSerialization;
+#define LEFT_START (safezoneX)
 call ASORGS_fnc_UpdateWeight;
 /*_uniformCombo = ASORGS_getControl(ASORGS_Main_Display, ASORGS_uniform_combo);
 _uniformIndex = _uniformCombo lbValue (lbCurSel _uniformCombo);
@@ -109,14 +110,14 @@ if(_totalCapacity > 0) then {
 		};
 		_backpackWidth = _totalWidth * (ASORGS_BackpackCapacity/_totalCapacity);
 	};
-	_uniformControl ctrlSetPosition [safezoneX, _ypos, _uniformWidth, (1/25)];
-	_uniformTTControl ctrlSetPosition [safezoneX, _ypos, _uniformWidth, (1/25)];
+	_uniformControl ctrlSetPosition [LEFT_START, _ypos, _uniformWidth, (1/25)];
+	_uniformTTControl ctrlSetPosition [LEFT_START, _ypos, _uniformWidth, (1/25)];
 	_uniformTTControl ctrlSetTooltip format["Uniform Capacity: %1/%2", ASORGS_UniformFilled, ASORGS_UniformCapacity];
-	_vestControl ctrlSetPosition [safezoneX + _uniformWidth, _ypos, _vestWidth, (1/25)];
-	_vestTTControl ctrlSetPosition [safezoneX + _uniformWidth, _ypos, _vestWidth, (1/25)];
+	_vestControl ctrlSetPosition [LEFT_START + _uniformWidth, _ypos, _vestWidth, (1/25)];
+	_vestTTControl ctrlSetPosition [LEFT_START + _uniformWidth, _ypos, _vestWidth, (1/25)];
 	_vestTTControl ctrlSetTooltip format["Vest Capacity: %1/%2", ASORGS_VestFilled, ASORGS_VestCapacity];
-	_backpackControl ctrlSetPosition [safezoneX + _uniformWidth + _vestWidth, _ypos, _backpackWidth, (1/25)];
-	_backpackTTControl ctrlSetPosition [safezoneX + _uniformWidth + _vestWidth, _ypos, _backpackWidth, (1/25)];
+	_backpackControl ctrlSetPosition [LEFT_START + _uniformWidth + _vestWidth, _ypos, _backpackWidth, (1/25)];
+	_backpackTTControl ctrlSetPosition [LEFT_START + _uniformWidth + _vestWidth, _ypos, _backpackWidth, (1/25)];
 	_backpackTTControl ctrlSetTooltip format["Backpack Capacity: %1/%2", ASORGS_BackpackFilled, ASORGS_BackpackCapacity];
 	/*_backpackTTControl ctrlEnable false;
 	_uniformTTControl ctrlEnable false;

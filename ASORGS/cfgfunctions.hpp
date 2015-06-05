@@ -67,6 +67,10 @@ class ASORGS
 		class Log {scope=1;};
 		class EndsWith {scope=1;};
 		class GetDetailsFromArray { scope=1; };
+		class GetModIcon {scope=1; };
+		class TrimLeft {scope=1; };
+		class Split {scope=1; };
+		class GetWeaponBase {scope=1; };
 	};
 
 	class VirtualInventory

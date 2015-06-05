@@ -25,11 +25,22 @@ Speed - A database of all required information is built at load time so not many
 Customizable - Setting to use a custom logo as the background. Settings to allow it to work with multiple medical systems and mods (and class names can be added to the config.sqf to allow it to work with hopefully any mod). 
 Usability - Everything you have on your character is laid out in front of you in an organized fashion and can easily be changed.
 
+Blacklist/Whitelist note:
+There are 2 ways that the blacklist/whitelist works in this script. The overall ASORGS_Blacklist/ASORGS_Whitelist is applied when building the database during mission init. At this point ammo from weapons that aren't allowed is automatically removed/not put in the database. When the Gear Selector is opened, at runtime Blacklist/Whitelist is generated using any matching Unit Class/Side/Faction specific blacklists/whitelists as defined in the config.sqf. Both the runtime and global blacklists are checked when loading presets.
+
 Forums:
 http://forums.bistudio.com/showthread.php?183293-ASOR-Gear-Selector
 
 Change Log:
-v1.5 25/1/2014
+v1.52 9/4/2015
+- Fixes insignias.
+- Fixes various attachments not working (BIS doesn't use matching case, so the change below broke some attachments).
+- Fixes whitelist (hopefully).
+- Adds class specific blacklist/whitelist.
+- Fixes some ammo issues from Marksmen DLC.
+- Fixes Bipods.
+
+v1.5 25/1/2015
 - Uses new configProperties command for faster loading.
 - Option to exclude all ammo that's not in any allowed guns. Makes for shorter blacklists and more performance because it's not loading unneeded magazines.
 - Fixed save screen for lower resolutions.
@@ -109,4 +120,3 @@ Modify — to adapt the work.
 
 Under the following conditions:
 Notification - If you improve this work, you must give Lecks a copy of the improvements and the option of including it in a new version of this work if he sees fit.
-Profit - This work can not be used on monetized servers without permission from Lecks. This work can be used in Make Arma Not War entries.

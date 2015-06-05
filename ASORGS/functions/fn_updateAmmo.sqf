@@ -7,42 +7,47 @@ _playerPistolAmmo = [];
 _playerLauncherAmmo = [];
 _playerExtraAmmo = [];
 _comboCount = 5;
-_getWeaponBase = {
-	_weapon = _this;
-	if(_weapon == "") exitWith {""};
-	_weaponcfg = (configFile >> "cfgWeapons" >> _weapon);
-	if(!isClass _weaponcfg) exitWith {""};
-	_parent = (_weaponcfg call BIS_fnc_ReturnParents) select 1;
-	if(getNumber(_parent >> "scope") !=2) exitWith {_weapon};
-	if(getText(_parent >> "displayName") == getText(_weaponcfg >> "displayName")) then { _weapon = configName _parent; };
-	_weapon
-};
-_primaryWeapon = (call ASORGS_fnc_GetPrimaryWeapon) call _getWeaponBase;// ((call ASORGS_fnc_GetPrimaryWeapon) call BIS_fnc_WeaponComponents) select 0;
-_launcher = (call ASORGS_fnc_GetLauncher) call _getWeaponBase;//((call ASORGS_fnc_GetLauncher) call BIS_fnc_WeaponComponents) select 0;
-_handgun = (call ASORGS_fnc_GetHandgun) call _getWeaponBase;//((call ASORGS_fnc_GetHandgun) call BIS_fnc_WeaponComponents) select 0;
+
+_primaryWeapon = (call ASORGS_fnc_GetPrimaryWeapon) call ASORGS_fnc_getWeaponBase;// ((call ASORGS_fnc_GetPrimaryWeapon) call BIS_fnc_WeaponComponents) select 0;
+_launcher = (call ASORGS_fnc_GetLauncher) call ASORGS_fnc_getWeaponBase;//((call ASORGS_fnc_GetLauncher) call BIS_fnc_WeaponComponents) select 0;
+_handgun = (call ASORGS_fnc_GetHandgun) call ASORGS_fnc_getWeaponBase;//((call ASORGS_fnc_GetHandgun) call BIS_fnc_WeaponComponents) select 0;
 if(isNil '_launcher') then {_launcher = ""};
 if(isNil '_handgun') then {_handgun = ""};
 if(isNil '_primaryWeapon') then {_primaryWeapon = ""};
 _rifleDetails = [_primaryWeapon, DB_Rifles] call ASORGS_fnc_GetDetails;
 _launcherDetails = [_launcher, DB_Launchers] call ASORGS_fnc_GetDetails;
 _pistolDetails = [_handgun, DB_Handguns] call ASORGS_fnc_GetDetails;
+/*
 _rifleMagsRaw = _primaryWeapon call ASORGS_fnc_GetWeaponMuzzleMagazines;
 _pistolMagsRaw = _handgun call ASORGS_fnc_GetWeaponMuzzleMagazines;
 _launcherMagsRaw = _launcher call ASORGS_fnc_GetWeaponMuzzleMagazines;
-_alreadySelected = [];
-_rifleMags = [];
-{
-	_rifleMags = _rifleMags + _x;
-} foreach _rifleMagsRaw;
-_pistolMags = [];
-{
-	_pistolMags = _pistolMags + _x;
-} foreach _pistolMagsRaw;
-_launcherMags = [];
-{
-	_launcherMags = _launcherMags + _x;
-} foreach _launcherMagsRaw;
+*/
 
+_rifleMagIndexs = [];
+_rifleMags = [];
+_pistolMagIndexs = [];
+_pistolMags = [];
+_launcherMagIndexs = [];
+_launcherMags = [];
+_alreadySelected = [];
+if(0 < count _rifleDetails) then {
+	_rifleMagIndexs = _rifleDetails select DBF_Magazines;
+	{
+		_rifleMags pushBack (ASORGS_DB select DB_Magazines select _x select DBF_ClassName);
+	} foreach _rifleMagIndexs;
+};
+if(0 < count _pistolDetails) then {
+	_pistolMagIndexs = _pistolDetails select DBF_Magazines;
+	{
+		_pistolMags pushBack (ASORGS_DB select DB_Magazines select _x select DBF_ClassName);
+	} foreach _pistolMagIndexs;
+};
+if( 0 < count _launcherDetails) then {
+	_launcherMagIndexs = _launcherDetails select DBF_Magazines;
+	{
+		_launcherMags pushBack (ASORGS_DB select DB_Magazines select _x select DBF_ClassName);
+	} foreach _launcherMagIndexs;
+};
 _allWeaponMags = _rifleMags + _pistolMags + _launcherMags;
 
 {
@@ -95,12 +100,12 @@ for[{_i = 0}, {_i < _comboCount}, {_i = _i + 1}] do {
 	_countControl ctrlSetText format["%1", 0];
 	COMBO_ADD("None", "", -1, "")
 	_itemCount = 0;
-	if(count _rifleDetails > 0) then {
+	if(count _rifleDetails > 0) then { //no current rifle
 		{
 			_details = ASORGS_DB select DB_Magazines select _x;	
 		
 			_class = _details select DBF_ClassName;
-			if((count _details > 0) && ([(_details select DBF_Class), false] call ASORGS_fnc_IsAllowed) && !(_class in _alreadySelected)) then
+			if((count _details > 0) && ([_class, false] call ASORGS_fnc_IsAllowed) && !(_class in _alreadySelected)) then
 			{
 				COMBO_ADD((_details select DBF_Name), _class, (_details select DBF_Index), (_details select DBF_Picture))
 				if(_class == _currentMag) then {
@@ -111,7 +116,7 @@ for[{_i = 0}, {_i < _comboCount}, {_i = _i + 1}] do {
 				};
 			};
 		} forEach (_rifleDetails select DBF_Magazines);
-	};	
+	};
 	if(_itemCount <= 0) then {
 		_minus ctrlEnable false;
 	} else {

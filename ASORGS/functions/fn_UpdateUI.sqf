@@ -67,7 +67,8 @@ _showPrimaryAddons = ASORGS_ShowPrimaryAddons && ((lbCurSel ASORGS_primary_combo
 _showPrimaryScope = ((lbSize ASORGS_primaryScope_combo) > 1) && _showPrimaryAddons;
 _showPrimaryRail = ((lbSize ASORGS_primaryRail_combo) > 1) && _showPrimaryAddons;
 _showPrimarySuppressor = ((lbSize ASORGS_primarySuppressor_combo) > 1) && _showPrimaryAddons;
-_showAnyPrimary = (_showPrimaryWeapon || _showPrimaryAddons || _showPrimaryScope || _showPrimaryRail || _showPrimarySuppressor);
+_showPrimaryBipod = ((lbSize ASORGS_primaryBipod_combo) > 1) && _showPrimaryAddons;
+_showAnyPrimary = (_showPrimaryWeapon || _showPrimaryScope || _showPrimaryRail || _showPrimarySuppressor || _showPrimaryBipod);
 _showLauncher = ASORGS_ShowLauncher && ((lbSize ASORGS_launcher_combo) > 1);
 _showLauncherAddons = ASORGS_ShowLauncherAddons && ((lbCurSel ASORGS_launcher_combo) != 0);
 _showLauncherScope = ((lbSize ASORGS_launcherScope_combo) > 1) && _showLauncherAddons;
@@ -76,7 +77,8 @@ _showHandgun = ASORGS_ShowHandgun && ((lbSize ASORGS_handgun_combo) > 1);
 _showHandgunAddons = ASORGS_ShowHandgunAddons && ((lbCurSel ASORGS_handgun_combo) != 0);
 _showHandgunScope = ((lbSize ASORGS_handgunScope_combo) > 1) && _showHandgunAddons;
 _showHandgunSuppressor = ((lbSize ASORGS_handgunSuppressor_combo) > 1) && _showHandgunAddons;
-_showAnyHandgun = (_showHandgun || _showHandgunScope || _showHandgunSuppressor || _showHandgunAddons);
+_showHandgunBipod = ((lbSize ASORGS_handgunBipod_combo) > 1) && _showPrimaryAddons;
+_showAnyHandgun = (_showHandgun || _showHandgunScope || _showHandgunSuppressor || _showHandgunBipod);
 _showExtraAttachments = ASORGS_ShowExtraAttachments && ((lbSize ASORGS_extraattach1_combo) > 1);
 _showExtraAmmo = ASORGS_ShowExtraAmmo && ((lbSize ASORGS_extraammo1_combo) > 1);
 _showGrenades = ASORGS_ShowGrenades && ((lbSize ASORGS_grenade1_combo) > 1);
@@ -128,8 +130,9 @@ SHOW_MULTICOMBO_IF(ASORGS_primaryAmmo_label, _showPrimaryAddons, 5)
 SHOW_SINGLEITEM_IF(ASORGS_primaryScope_label, _showPrimaryScope)
 SHOW_SINGLEITEM_IF(ASORGS_primaryRail_label, _showPrimaryRail)
 SHOW_SINGLEITEM_IF(ASORGS_primarySuppressor_label, _showPrimarySuppressor)
+SHOW_SINGLEITEM_IF(ASORGS_primaryBipod_label, _showPrimaryBipod)
 
-if(_showPrimaryWeapon || _showPrimaryAddons || _showPrimaryScope || _showPrimaryRail || _showPrimarySuppressor) then {
+if(_showAnyPrimary) then {
 	END_CATEGORY
 };
 if(_showLauncher) then {
@@ -161,6 +164,7 @@ if(_showHandgun) then {
 SHOW_MULTICOMBO_IF(ASORGS_handgunAmmo_label, _showHandgunAddons, 5)
 SHOW_SINGLEITEM_IF(ASORGS_handgunScope_label, _showHandgunScope)
 SHOW_SINGLEITEM_IF(ASORGS_handgunSuppressor_label, _showHandgunSuppressor)
+SHOW_SINGLEITEM_IF(ASORGS_handgunBipod_label, _showHandgunBipod)
 
 if(_showAnyHandgun) then {
 	END_CATEGORY
@@ -228,7 +232,7 @@ if(_showAnyUniformOrOthers) then {
 	_uniformborderControl ctrlShow false;
 };
 SHOW_MULTICOMBOCAT_IF(ASORGS_medical_label, _showMedical, 20)
-SHOW_MULTICOMBOCAT_IF(ASORGS_misc_label, _showMisc, 5)
+SHOW_MULTICOMBOCAT_IF(ASORGS_misc_label, _showMisc, 10)
 _miscbottom = _y - (ASORGS_CategorySpacing * 0.5);
 _miscborderControl = ASORGS_getControl(ASORGS_Main_Display, ASORGS_miscBorder);
 _miscpos = ctrlPosition _miscborderControl;
@@ -289,8 +293,9 @@ if(_y > (safezoneY + safezoneH - (1/25))) then {
 	SHOWSHRUNK_SINGLEITEM_IF(ASORGS_primaryScope_label, _showPrimaryScope)
 	SHOWSHRUNK_SINGLEITEM_IF(ASORGS_primaryRail_label, _showPrimaryRail)
 	SHOWSHRUNK_SINGLEITEM_IF(ASORGS_primarySuppressor_label, _showPrimarySuppressor)
-
-	if(_showPrimaryWeapon || _showPrimaryAddons || _showPrimaryScope || _showPrimaryRail || _showPrimarySuppressor) then {
+	SHOWSHRUNK_SINGLEITEM_IF(ASORGS_primaryBipod_label, _showPrimaryBipod)
+	
+	if(_showAnyPrimary) then {
 		ENDSHRUNK_CATEGORY
 	};
 	//launcher is never hidden
@@ -326,7 +331,8 @@ if(_y > (safezoneY + safezoneH - (1/25))) then {
 	SHOWSHRUNK_MULTICOMBO_IF(ASORGS_handgunAmmo_label, _showHandgunAddons, 5)
 	SHOWSHRUNK_SINGLEITEM_IF(ASORGS_handgunScope_label, _showHandgunScope)
 	SHOWSHRUNK_SINGLEITEM_IF(ASORGS_handgunSuppressor_label, _showHandgunSuppressor)
-
+	SHOWSHRUNK_SINGLEITEM_IF(ASORGS_handgunBipod_label, _showHandgunBipod)
+	
 	if(_showAnyHandgun) then {
 		ENDSHRUNK_CATEGORY
 	};
@@ -397,7 +403,7 @@ if(_y > (safezoneY + safezoneH - (1/25))) then {
 		_uniformborderControl ctrlShow false;
 	};
 	SHOWSHRUNK_MULTICOMBOCAT_IF(ASORGS_medical_label, _showMedical, 20)
-	SHOWSHRUNK_MULTICOMBOCAT_IF(ASORGS_misc_label, _showMisc, 5)
+	SHOWSHRUNK_MULTICOMBOCAT_IF(ASORGS_misc_label, _showMisc, 10)
 
 	_miscbottom = _y - (ASORGS_CategorySpacing * 0.5);
 	_miscborderControl = ASORGS_getControl(ASORGS_Main_Display, ASORGS_miscBorder);
@@ -437,7 +443,11 @@ _control ctrlCommit 0.1;
 	_control ctrlCommit 0.1;
 	_control = ASORGS_getControl(ASORGS_Main_Display,_x+1);
 	_control ctrlCommit 0.1;
-} forEach [ASORGS_primary_label, ASORGS_primaryScope_label, ASORGS_primaryRail_label, ASORGS_primarySuppressor_label, ASORGS_launcher_label, ASORGS_launcherScope_label, ASORGS_handgun_label, ASORGS_handgunScope_label, ASORGS_handgunSuppressor_label, ASORGS_uniform_label, ASORGS_headgear_label, ASORGS_vest_label,ASORGS_backpack_label, ASORGS_binoculars_label, ASORGS_nightvision_label, ASORGS_goggles_label, ASORGS_extraattach_label, ASORGS_insignia_label];
+} forEach [ASORGS_primary_label, ASORGS_primaryScope_label, ASORGS_primaryRail_label, ASORGS_primarySuppressor_label, ASORGS_primaryBipod_label, 
+			ASORGS_launcher_label, ASORGS_launcherScope_label, 
+			ASORGS_handgun_label, ASORGS_handgunScope_label, ASORGS_handgunSuppressor_label, ASORGS_handgunBipod_label, 
+			ASORGS_uniform_label, ASORGS_headgear_label, ASORGS_vest_label,ASORGS_backpack_label, 
+			ASORGS_binoculars_label, ASORGS_nightvision_label, ASORGS_goggles_label, ASORGS_extraattach_label, ASORGS_insignia_label];
 
 //individual controls
 {
@@ -452,6 +462,9 @@ _control ctrlCommit 0.1;
 	_comboCount = 5;	
 	if(_x == ASORGS_medical_label) then {
 		_comboCount = 20;
+	};
+	if(_x == ASORGS_misc_label) then {
+		_comboCount = 10;
 	};
 
 	_currentIDC = _x + 1;

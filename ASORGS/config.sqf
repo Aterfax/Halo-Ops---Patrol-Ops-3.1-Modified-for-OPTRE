@@ -1,5 +1,9 @@
+if(!hasInterface) exitWith {};
 //ASORGS_Debug = true;
 
+//EXPERIMENTAL - not recommended. Causes errors if mods aren't in Arma3 folder.
+ASORGS_ShowModIcons = false;
+ASORGS_NoModIcons = ["kart", "@HAFM_FIX", "@fhq_accessories"];
 //========================================================Added in v1.4
  //Wait this many seconds for TFAR/ACRE to assign a radio before adding items. Can not re-open ASORGS during this time.
 ASORGS_UniqueRadioWaitTime = 6;
@@ -66,7 +70,7 @@ ASORGS_explosives = ["ATMine_Range_Mag","APERSMine_Range_Mag","APERSBoundingMine
 ASORGS_medical = ["x39_medikit", "x39_medikit2", "x39_medikit3", "x39_medikit4", "x39_medikit5", "x39_bloodbag", "x39_morphine", "x39_epinephrine", "x39_defibrillator", "x39_tourniquet", "x39_earplug", "x39_bandage", "FirstAidKit", "Medikit", "AGM_Bandage", "AGM_Bloodbag", "AGM_EarBuds", "AGM_Epipen", "AGM_Morphine", "x39_xms2_adrenaline", "x39_xms2_bandage", "x39_xms2_coldSpray", "x39_xms2_defibrillator", "x39_xms2_earplugs", "x39_xms2_heatPack", "x39_xms2_IVBag", "x39_xms2_mediPack", "x39_xms2_morphine", "x39_xms2_naloxone", "x39_xms2_sphygmomanometer", "x39_xms2_tourniquet"];
 
 //Items that for some reason get detected as something else (minedetector = launcher?). Forces them into Misc.
-ASORGS_forceMisc = ["MineDetector", "AGM_SpareBarrel", "AGM_UAVBattery", "AGM_CableTie", "AGM_IR_Strobe_Item", "AGM_MapTools", "ToolKit", "AGM_Clacker", "AGM_DefusalKit", "AGM_ExplosiveItem", "AGM_ItemKestrel", "AGM_DeadManSwitch", "AGM_M26_Clacker" ];
+ASORGS_forceMisc = ["MineDetector", "AGM_SpareBarrel", "AGM_UAVBattery", "AGM_CableTie", "AGM_IR_Strobe_Item", "AGM_MapTools", "ToolKit", "AGM_Clacker", "AGM_DefusalKit", "AGM_ExplosiveItem", "AGM_ItemKestrel", "AGM_DeadManSwitch", "AGM_M26_Clacker", "cw_item_9liner_cas","cw_item_9liner_medivac","cw_item_notepad","cw_item_5liner_gcff","cw_item_cas_check_in_breef" ];
 
 //World names for maps that show the light too bright at night. Check the names with the 'worldName' command.
 ASORGS_brightMaps = []; //pja305 v6 or less
@@ -82,7 +86,7 @@ ASORGS_BackgroundLogo = "A3\ui_f\data\Logos\arma3_expansion_ca.paa";
 //Background tile (Arma 3 loading screen noise)
 ASORGS_BackgroundTile = "A3\ui_f\data\GUI\cfg\LoadingScreens\loadingnoise_ca.paa";
 
-//ASORGS_Blacklist = []; //hide items for everyone
+ASORGS_Blacklist = [];
 
 //ASORGS_Blacklist_BLU_F = []; //hide items for all NATO (class name BLU_F) units
 

@@ -1,7 +1,7 @@
 #include "macro.sqf"
 _type = _this select 0;
 //hint format["%1", _type];
-private ["_weaponDetails", "_scopeControl", "_railControl", "_suppControl", "_weapon", "_attachments", "_index"];
+private ["_weaponDetails", "_scopeControl", "_railControl", "_suppControl", "_bipodControl", "_weapon", "_attachments", "_index"];
 
 if((_type == "primary")) then {
 	//load scopes for current rifle
@@ -15,6 +15,7 @@ if((_type == "primary")) then {
 	_scopeControl = ASORGS_getControl(ASORGS_Main_Display,ASORGS_primaryScope_combo);
 	_railControl = ASORGS_getControl(ASORGS_Main_Display,ASORGS_primaryRail_combo);
 	_suppControl = ASORGS_getControl(ASORGS_Main_Display,ASORGS_primarySuppressor_combo);
+	_bipodControl = ASORGS_getControl(ASORGS_Main_Display,ASORGS_primaryBipod_combo);
 	_attachments = call ASORGS_fnc_GetPrimaryWeaponItems;
 };
 if((_type == "secondary")) then {
@@ -39,6 +40,7 @@ if((_type == "handgun")) then {
 	};
 	_scopeControl = ASORGS_getControl(ASORGS_Main_Display,ASORGS_handgunScope_combo);
 	_suppControl = ASORGS_getControl(ASORGS_Main_Display,ASORGS_handgunSuppressor_combo);
+	_bipodControl = ASORGS_getControl(ASORGS_Main_Display,ASORGS_handgunBipod_combo);
 	_attachments = call ASORGS_fnc_GetHandgunItems;
 };
 /*
@@ -138,4 +140,29 @@ if(!isNil "_suppControl") then {
 		} foreach _info;
 	};
 };
-
+if(!isNil "_bipodControl") then {
+	lbClear _bipodControl;
+	//load muzzle accessories for current rifle
+	_bipodControl lbAdd "None"; //Displayname on list
+	_bipodControl lbSetData [(lbSize _bipodControl)-1,""]; //Data for index is classname
+	_bipodControl lbSetValue [(lbSize _bipodControl)-1,-1];
+	_bipodControl lbSetCurSel 0;
+	if((count _weaponDetails) > 0) then {
+		_info = _weaponDetails select DBF_Bipods;
+		{
+			_details = [_x, DB_Bipods] call ASORGS_fnc_getDetails;
+			if((count _details > 0) && {([(_details select DBF_Class), false] call ASORGS_fnc_IsAllowed)}) then
+			{
+				_bipodControl lbAdd format["%1", (_details select DBF_Name)]; //Displayname on list
+				_bipodControl lbSetData [(lbSize _bipodControl)-1,(_details select DBF_Class)]; //Data for index is classname
+				_bipodControl lbSetValue [(lbSize _bipodControl)-1,(_details select DBF_Index)]; //Value for index is type
+				_bipodControl lbSetPicture [(lbSize _bipodControl)-1,(_details select DBF_Picture)];
+				if((count _attachments) > 0) then {
+					if ((_details select DBF_Class) in _attachments) then {
+						_bipodControl lbSetCurSel (lbSize _bipodControl)-1;
+					};
+				};
+			};
+		} foreach _info;
+	};
+};

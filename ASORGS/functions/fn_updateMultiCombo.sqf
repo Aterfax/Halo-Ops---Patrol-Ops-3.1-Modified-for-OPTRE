@@ -90,7 +90,8 @@ switch(_type) do {
 		} foreach (call ASORGS_fnc_GetInventoryItems);
 	};
 	case "misc": {
-		{
+		_comboCount = 10;
+		{	
 			_itemClass = _x;
 			if([_itemClass] call ASORGS_fnc_IsRadio) then {
 				_itemClass = [_itemClass, true] call ASORGS_fnc_GetRadioClass;

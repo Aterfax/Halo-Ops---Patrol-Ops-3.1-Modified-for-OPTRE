@@ -123,71 +123,27 @@ if((_currentPrimaryWeapon != _desiredPrimaryWeapon) || (_currentLauncher != _des
 };
 if(isNil 'ASORGS_Clone') exitWith {};
 _currentHandgunItems = handgunItems ASORGS_Clone;
-if( count _currentHandgunItems < 3) then {
-	_currentHandgunItems = ["", "", ""];
-};
-if( count _desiredHandgunItems < 3) then {
-	_desiredHandgunItems = ["", "", ""];
-};
-for "_i" from 0 to 2 do {
-	_current = _currentHandgunItems select _i;
-	_desired = _desiredHandgunItems select _i;
-	if(_current != _desired) then {
-		if(_current != "" && _desired == "") then {
-			//secondary weapon items currently can't be removed with script.
-			ASORGS_Clone removeHandgunItem _current;
-		};
-		if(_desired != "") then {
-			ASORGS_Clone addHandgunItem _desired;
-			ASORGS_Clone selectWeapon _desiredHandgun;
-			
-		};
-		_changed = true;
-	};
-};
+
+_itemsToAdd = _desiredHandgunItems - _currentHandgunItems;
+_itemsToRemove = _currentHandgunItems - _desiredHandgunItems;
+{ ASORGS_Clone removeHandgunItem _x; _changed = true} forEach _itemsToRemove;
+{ ASORGS_Clone addHandgunItem _x; ASORGS_Clone selectWeapon _desiredHandgun;  _changed = true } forEach _itemsToAdd;
+
+
 _currentLauncherItems = secondaryWeaponItems ASORGS_Clone;
-if( count _currentLauncherItems < 3) then {
-	_currentLauncherItems = ["", "", ""];
-};
-if( count _desiredLauncherItems < 3) then {
-	_desiredLauncherItems = ["", "", ""];
-};
-for "_i" from 0 to 2 do {
-	_current = _currentLauncherItems select _i;
-	_desired = _desiredLauncherItems select _i;
-	if(_current != _desired) then {
-		if(_current != "" && _desired == "") then {
-			//secondary weapon items currently can't be removed with script.
-		//	ASORGS_Clone removeSecondaryWeaponItem _current;
-		};
-		if(_desired != "") then {
-			ASORGS_Clone addSecondaryWeaponItem _desired;
-			ASORGS_Clone selectWeapon _desiredLauncher;
-		};
-		_changed = true;
-	};
-};
+_itemsToAdd = _desiredLauncherItems - _currentLauncherItems;
+_itemsToRemove = _currentLauncherItems - _desiredLauncherItems;
+{ ASORGS_Clone removeSecondaryWeaponItem _x; _changed = true } forEach _itemsToRemove;
+{ ASORGS_Clone addSecondaryWeaponItem _x; ASORGS_Clone selectWeapon _desiredLauncher;  _changed = true } forEach _itemsToAdd;
+
+
 _currentPrimaryWeaponItems = primaryWeaponItems ASORGS_Clone;
-if( count _currentPrimaryWeaponItems < 3) then {
-	_currentPrimaryWeaponItems = ["", "", ""];
-};
-if( count _desiredPrimaryWeaponItems < 3) then {
-	_desiredPrimaryWeaponItems = ["", "", ""];
-};
-for "_i" from 0 to 2 do {
-	_current = _currentPrimaryWeaponItems select _i;
-	_desired = _desiredPrimaryWeaponItems select _i;
-	if(_current != _desired) then {
-		if(_current != "" && _desired == "") then {
-			ASORGS_Clone removePrimaryWeaponItem _current;
-		};
-		if(_desired != "") then {
-			ASORGS_Clone addPrimaryWeaponITem _desired;
-			ASORGS_Clone selectWeapon _desiredPrimaryWeapon;
-		};
-		_changed = true;
-	};
-};
+_itemsToAdd = _desiredPrimaryWeaponItems - _currentPrimaryWeaponItems;
+_itemsToRemove = _currentPrimaryWeaponItems - _desiredPrimaryWeaponItems;
+{ ASORGS_Clone removePrimaryWeaponItem _x; _changed = true } forEach _itemsToRemove;
+{ ASORGS_Clone addPrimaryWeaponItem _x; ASORGS_Clone selectWeapon _desiredPrimaryWeapon; _changed = true; } forEach _itemsToAdd;
+
+
 if(isNil 'ASORGS_Clone') exitWith {};
 _currentNV = if((count assignedItems ASORGS_Clone) > 0) then {(assignedItems ASORGS_Clone) select 0;} else {""};
 if(_currentNV != _desiredNightvision) then {

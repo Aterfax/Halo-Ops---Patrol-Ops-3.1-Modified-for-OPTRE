@@ -30,7 +30,10 @@ _factionBlacklistName = format["ASORGS_Blacklist_%1", side ASORGS_Player];
 _factionBlacklist = missionNamespace getVariable _factionBlacklistName;
 if(isNil '_factionBlacklist') then {_factionBlacklist = [];};
 
-ASORGS_RuntimeBlacklist = _sideBlacklist + _factionBlacklist;
+_unitBlacklist = missionNamespace getVariable format["ASORGS_Blacklist_%1", typeOf ASORGS_Player];
+if(isNil '_unitBlacklist') then { _unitBlacklist = []; };
+
+ASORGS_RuntimeBlacklist = _sideBlacklist + _factionBlacklist + _unitBlacklist;
 
 _sideWhitelistName = format["ASORGS_Whitelist_%1", side ASORGS_Player];
 _sideWhitelist = missionNamespace getVariable _sideWhitelistName;
@@ -40,7 +43,10 @@ _factionName = faction ASORGS_Player;
 _factionWhitelistName = format["ASORGS_Whitelist_%1", side ASORGS_Player];
 _factionWhitelist = missionNamespace getVariable _factionWhitelistName;
 if(isNil '_factionWhitelist') then {_factionWhitelist = [];};
-ASORGS_RuntimeWhitelist = _sideWhitelist + _factionWhitelist;
+
+_unitWhitelist = missionNamespace getVariable format["ASORGS_Whitelist_%1", typeOf ASORGS_Player];
+if(isNil '_unitWhitelist') then { _unitWhitelist = []; };
+ASORGS_RuntimeWhitelist = _sideWhitelist + _factionWhitelist + _unitWhitelist;
 
 //hint format["%1,%2,%3",_sideBlacklist, _factionBlacklist, ASORGS_RuntimeBlacklist];
 ASORGS_Busy = 0;

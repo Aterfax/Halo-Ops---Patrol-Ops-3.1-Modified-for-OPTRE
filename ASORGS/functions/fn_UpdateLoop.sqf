@@ -115,37 +115,31 @@ while{ASORGS_Open} do {
 			};
 
 			case ASORGS_primaryScope_combo : {
-				_attachments = call ASORGS_fnc_GetPrimaryWeaponItems;
-				_attachment = [_attachments, 2, "", [""]] call BIS_fnc_param;
-				[_attachment, _newclass, "primary"] call ASORGS_fnc_SwitchAttachments;
+				[_newclass, "primary", IIT_SCOPE ] call ASORGS_fnc_SwitchAttachments;
 			};
 			case ASORGS_primarySuppressor_combo : {
-				_attachments = call ASORGS_fnc_GetPrimaryWeaponItems;
-				_attachment = [_attachments, 0, "", [""]] call BIS_fnc_param;
-				[_attachment, _newclass, "primary"] call ASORGS_fnc_SwitchAttachments;
+				[_newclass, "primary", IIT_SUPPRESSOR ] call ASORGS_fnc_SwitchAttachments;
 			};
 			case ASORGS_primaryRail_combo : {
-				_attachments = call ASORGS_fnc_GetPrimaryWeaponItems;
-				_attachment = [_attachments, 1, "", [""]] call BIS_fnc_param;
-				[_attachment, _newclass, "primary"] call ASORGS_fnc_SwitchAttachments;
+				[_newclass, "primary", IIT_RAIL] call ASORGS_fnc_SwitchAttachments;
+			};
+			case ASORGS_primaryBipod_combo : {
+				[_newclass, "primary", IIT_BIPOD] call ASORGS_fnc_SwitchAttachments;
 			};
 			case ASORGS_launcher_combo : {
 				[_newclass, "secondary"] call ASORGS_fnc_SwitchWeapons;
 			};
 			case ASORGS_launcherScope_combo : {
-				_attachments = call ASORGS_fnc_GetLauncherItems;
-				_attachment = [_attachments, 2, "", [""]] call BIS_fnc_param;
-				[_attachment, _newclass, "secondary"] call ASORGS_fnc_SwitchAttachments;
+				[_newclass, "secondary", IIT_SCOPE] call ASORGS_fnc_SwitchAttachments;
 			};
 			case ASORGS_handgunScope_combo : {
-				_attachments = call ASORGS_fnc_GetHandgunItems;
-				_attachment = [_attachments, 2, "", [""]] call BIS_fnc_param;
-				[_attachment, _newclass, "handgun"] call ASORGS_fnc_SwitchAttachments;
+				[_newclass, "handgun", IIT_SCOPE] call ASORGS_fnc_SwitchAttachments;
 			};
 			case ASORGS_handgunSuppressor_combo : {
-				_attachments = call ASORGS_fnc_GetHandgunItems;
-				_attachment = [_attachments, 0, "", [""]] call BIS_fnc_param;
-				[_attachment, _newclass, "handgun"] call ASORGS_fnc_SwitchAttachments;
+				[_newclass, "handgun", IIT_SUPPRESSOR] call ASORGS_fnc_SwitchAttachments;
+			};
+			case ASORGS_handgunBipod_combo : {
+				[_newclass, "handgun", IIT_BIPOD] call ASORGS_fnc_SwitchAttachments;
 			};
 			case ASORGS_handgun_combo : {
 				[_newclass, "handgun"] call ASORGS_fnc_SwitchWeapons;
@@ -348,6 +342,21 @@ while{ASORGS_Open} do {
 			};
 			case ASORGS_misc5_combo : {
 				[ASORGS_misc_label,5, "misc"] call _setItems;
+			};
+			case ASORGS_misc6_combo : {
+				[ASORGS_misc_label,6, "misc"] call _setItems;
+			};
+			case ASORGS_misc7_combo : {
+				[ASORGS_misc_label,7, "misc"] call _setItems;
+			};
+			case ASORGS_misc8_combo : {
+				[ASORGS_misc_label,8, "misc"] call _setItems;
+			};
+			case ASORGS_misc9_combo : {
+				[ASORGS_misc_label,9, "misc"] call _setItems;
+			};
+			case ASORGS_misc10_combo : {
+				[ASORGS_misc_label,10, "misc"] call _setItems;
 			};
 			case ASORGS_grenade1_combo : {
 				[ASORGS_grenade_label,1] call _setGrenades;

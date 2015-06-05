@@ -34,9 +34,9 @@ _addMags = {
 					_newRadioBase = [_itemType, true] call ASORGS_fnc_GetRadioClass;
 					_matchingRadio = "";
 					for[{_r = 0}, {(_r < count _oldRadios) && (_matchingRadio == "")}, {_r = _r + 1}] do {
-						if (_newRadioBase == [_oldRadios select _i, true] call ASORGS_fnc_GetRadioClass) then {
-							_matchingRadio = _oldRadios select _i;
-							_oldRadios set [_i, "DEL"];
+						if (_newRadioBase == [_oldRadios select _r, true] call ASORGS_fnc_GetRadioClass) then {
+							_matchingRadio = _oldRadios select _r;
+							_oldRadios set [_r, "DEL"];
 						};
 					};
 					_oldRadios = _oldRadios - ["DEL"];
@@ -57,7 +57,7 @@ _addMags = {
 };
 
 [ ASORGS_medical_label + 1, 20] call _addMags;
-[ ASORGS_misc_label + 1, 5] call _addMags;
+[ ASORGS_misc_label + 1, 10] call _addMags;
 
 _itemComboIDC = ASORGS_extraattach_label + 1;
 _comboCount = 5;

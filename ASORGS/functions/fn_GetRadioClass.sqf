@@ -1,5 +1,6 @@
 private ["_class", "_forceBaseRadio", "_acre2Enabled", "_tfarEnabled"];
 _class = _this select 0;
+if(isNil '_class') exitWith {""};
 _forceBaseRadio = [_this,1,true,[true]] call BIS_fnc_Param;
 
 _acre2Enabled = !isNil 'ACRE_IS_SPECTATOR';
