@@ -20,7 +20,7 @@ Link to the PBO:
 
 
 ##Requirements:
-* [@OPTRE 0.13 alpha] (http://www.moddb.com/mods/operation-trebuchet-total-conversion-for-arma-3)
+* [@OPTRE 0.11 alpha] (http://www.moddb.com/mods/operation-trebuchet-total-conversion-for-arma-3)
 * [@CBA_A3] (http://www.armaholic.com/page.php?id=18767)
 
 ##Features:
