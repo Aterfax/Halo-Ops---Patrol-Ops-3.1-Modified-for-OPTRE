@@ -1,5 +1,5 @@
 # Halo Ops 1.1
-A modified ARMA3 Patrol Ops 3.1 mission for the TEI Halo Mod
+A modified ARMA3 Patrol Ops 3.1 mission for the OPTRE Halo Mod
 
 ##Introduction:
 
@@ -30,7 +30,7 @@ Link to the PBO:
 * Zeus for Admin 
 * Headless Client 
 * [ASOR Gear Selector] (http://www.armaholic.com/page.php?id=26177) (Scroll over the ammo boxes) 
-* TEI Vehicles used where appropriate. 
+* OPTRE Vehicles used where appropriate. 
 * Drop-pod insertion ( Scroll over the holotable.) 
 * Base protection from players firing at base. 
 * Rallypoint deployments. 
