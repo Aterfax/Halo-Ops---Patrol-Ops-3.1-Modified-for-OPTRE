@@ -1,4 +1,4 @@
-# Halo Ops 1.0
+# Halo Ops 1.1
 A modified ARMA3 Patrol Ops 3.1 mission for the TEI Halo Mod
 
 ##Introduction:
