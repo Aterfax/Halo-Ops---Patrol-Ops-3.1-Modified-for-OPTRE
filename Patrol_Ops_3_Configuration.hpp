@@ -94,7 +94,7 @@ PO3_preDefinedEnemyVehicles = [
 
 /* CSAT Forces */
 /* 0 - Anti Air Vehicles */	 ["OPTRE_M12R_AA_ins"]
-/* 1 - Attack Helos */		,["O_Heli_Attack_02_black_F","O_Heli_Attack_02_F"]
+/* 1 - Attack Helos */		,["OPTRE_Pelican_armed_ins","O_Heli_Attack_02_F"]
 /* 2 - Attack Planes */		,["O_UAV_02_F","O_UAV_02_CAS_F"]
 /* 3 - Heavy Vehicles */	,["O_MBT_02_cannon_F","O_APC_Tracked_02_cannon_F"]
 /* 4 - Light Vehicles */	,["OPTRE_M12_FAV_APC","OPTRE_M12_LRV_ins","OPTRE_M12_LRV_ins"]
@@ -131,7 +131,7 @@ PO3_preDefinedEnemyVehicles = [
 PO3_CfgSpawner_PreDefinedVehicles = PO3_preDefinedEnemyVehicles;
 
 // ==== PO3 Task Specific Entities (west/east/resistance) ==================================================
-PO3_target_officer_types = ["OPTRE_UNSC_Marine_Sgt_Johnson","OPTRE_Ins_URF_Officer","OPTRE_Ins_ER_Warlord"];
+PO3_target_officer_types = ["OPTRE_UNSC_ONI_Soldier_Naval","OPTRE_Ins_URF_Officer","OPTRE_Ins_ER_Warlord"];
 PO3_target_cache_types = ["B_supplyCrate_F","O_supplyCrate_F","I_supplyCrate_F"];
 PO3_target_tower_types = [ "Land_TTowerBig_2_F" , "Land_Communication_F" ];
 PO3_target_intel_types = ["Land_File1_F","Land_FilePhotos_F","Land_File2_F","Land_HandyCam_F","Land_Laptop_F","Land_Laptop_unfolded_F","Land_MobilePhone_smart_F","Land_SatellitePhone_F","Land_Photos_V2_F"];

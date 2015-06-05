@@ -11,7 +11,7 @@ Based on:
 [Patrol Ops 3.1] (http://www.armaholic.com/page.php?id=23671)
 
 Link to the PBO: 
-[Dropbox Link to the PBO] (https://www.dropbox.com/s/9cqgr4wm8dtxi0j/Halo%20Ops%201.0.pbo?dl=0) 
+[Dropbox Link to the PBO] (https://www.dropbox.com/s/qsp21v2sc5r7d05/Halo%20Ops%201.1.altis.pbo?dl=0) 
 
 ##Live Server at:
 
