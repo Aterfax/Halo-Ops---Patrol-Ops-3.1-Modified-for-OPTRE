@@ -80,8 +80,8 @@ class Mission
 	randomSeed=11588837;
 	class Intel
 	{
-		briefingName="Patrol Ops 3.1 - Halo";
-		overviewText="Patrol Operations is a dynamic mission generator with random objectives designed for combined arms co-operative tactical gameplay by larger groups of players. This version is modified to use the Eridanus Insurrection  Halo Mod";
+		briefingName="Halo Ops 1.1";
+		overviewText="Patrol Operations is a dynamic mission generator with random objectives designed for combined arms co-operative tactical gameplay by larger groups of players. This version is modified to use the OPTRE  Halo Mod";
 		resistanceWest=0;
 		resistanceEast=1;
 		timeOfChanges=28800;
