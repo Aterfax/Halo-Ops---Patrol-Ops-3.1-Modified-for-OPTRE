@@ -1,7 +1,7 @@
 ["INIT",format["Executing %1 init.sqf",missionName],true] call PO3_fnc_log;
 
 [] execVM "Patrol_Ops_3.sqf";
-nul = [] execVM "scripts\irstrobe.sqf";  
+ 
 if(!isDedicated) then {
 	Receiving_finish = false;
 	onPreloadFinished { Receiving_finish = true; onPreloadFinished {}; };

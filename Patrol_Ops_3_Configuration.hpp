@@ -135,7 +135,7 @@ PO3_target_officer_types = ["OPTRE_UNSC_ONI_Soldier_Naval","OPTRE_Ins_URF_Office
 PO3_target_cache_types = ["B_supplyCrate_F","O_supplyCrate_F","I_supplyCrate_F"];
 PO3_target_tower_types = [ "Land_TTowerBig_2_F" , "Land_Communication_F" ];
 PO3_target_intel_types = ["Land_File1_F","Land_FilePhotos_F","Land_File2_F","Land_HandyCam_F","Land_Laptop_F","Land_Laptop_unfolded_F","Land_MobilePhone_smart_F","Land_SatellitePhone_F","Land_Photos_V2_F"];
-PO3_rescue_heliTypes = ["OPTRE_Pelican_unarmed_green","OPTRE_Pelican_unarmed_tan","OPTRE_Pelican_unarmed_black"];
+PO3_rescue_heliTypes = ["OPTRE_Pelican_unarmed_green","OPTRE_Pelican_unarmed_tan","OPTRE_Pelican_unarmed_black","OPTRE_Pelican_armed_green","OPTRE_Pelican_armed_tan","OPTRE_Pelican_armed_black"];
 
 // = Pre-Defining Respawn Deployment Points =====================================================
 PO3_CfgRespawn_PreDefinedPositions = [
@@ -449,7 +449,11 @@ PO3_CfgLogistics_Loadable = [
 	,["OPTRE_Pelican_unarmed_black",15000]
 	,["OPTRE_Pelican_unarmed_ins",15000]
 	,["OPTRE_Pelican_armed_green",15000]
-	,["OPTRE_falcon_unarmed",1000]
+	,["OPTRE_Pelican_armed_black",15000]
+	,["OPTRE_Pelican_armed_tan",15000]
+	,["OPTRE_UNSC_falcon_black",1000]
+	,["OPTRE_UNSC_falcon_green",1000]
+	,["OPTRE_UNSC_falcon_tan",1000]
 	,["Helicopter_Base_H",422]
 ];
 
@@ -457,7 +461,7 @@ PO3_CfgLogistics_Loadable = [
 PO3_CfgLogistics_Liftable = [
 	 ["Cargo_base_F",4280]
 	,["B_supplyCrate_F",400]
-	,["OPTRE_Magic_Box",400]
+	,["OPTRE_Ammo_Magic_Box",400]
 	,["Quadbike_01_base_F",264]
 	,["B_Truck_01_transport_F",18300]
 	,["O_Truck_02_transport_F",18300]
@@ -486,12 +490,16 @@ PO3_CfgLogistics_Liftable = [
 	,["OPTRE_M813_TT",3300]
 	,["OPTRE_M12A1_LRV",1900]
 	,["OPTRE_M12R_AA",1900]
-	,["OPTRE_Pelican_unarmed_green",25000]
-	,["OPTRE_Pelican_unarmed_tan",25000]
-	,["OPTRE_Pelican_unarmed_black",25000]
-	,["OPTRE_Pelican_unarmed_ins",25000]
-	,["OPTRE_Pelican_armed_green",25000]
-	,["OPTRE_falcon_unarmed",12000]
+	,["OPTRE_Pelican_unarmed_green",70000]
+	,["OPTRE_Pelican_unarmed_tan",70000]
+	,["OPTRE_Pelican_unarmed_black",70000]
+	,["OPTRE_Pelican_unarmed_ins",70000]
+	,["OPTRE_Pelican_armed_green",70000]
+	,["OPTRE_Pelican_armed_tan",70000]
+	,["OPTRE_Pelican_armed_black",70000]
+	,["OPTRE_UNSC_falcon_black",65000]
+	,["OPTRE_UNSC_falcon_green",65000]
+	,["OPTRE_UNSC_falcon_tan",65000]
 	,["Tank",64000]
 	,["Ship_F",1200]
 	,["Heli_Light_01_armed_base_F",1990]
@@ -566,4 +574,5 @@ PO3_CfgLogistics_Towable = [
 PO3_CfgLogistics_Moveable = [
 	 ["Items_base_F",5]
 	,["B_supplyCrate_F",5]
+	,["OPTRE_Ammo_Magic_Box",5]
 ];
