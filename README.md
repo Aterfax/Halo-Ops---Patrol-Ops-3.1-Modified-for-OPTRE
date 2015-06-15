@@ -1,4 +1,4 @@
-# Halo Ops 1.1
+# Halo Ops 1.2
 A modified ARMA3 Patrol Ops 3.1 mission for the OPTRE Halo Mod
 
 ##Introduction:
@@ -11,7 +11,7 @@ Based on:
 [Patrol Ops 3.1] (http://www.armaholic.com/page.php?id=23671)
 
 Link to the PBO: 
-[Dropbox Link to the PBO] (https://www.dropbox.com/s/qsp21v2sc5r7d05/Halo%20Ops%201.1.altis.pbo?dl=0) 
+[Dropbox Link to the PBO] (https://www.dropbox.com/s/es3i1i867bw5odu/Halo%20Ops%201.2.altis.pbo?dl=0) 
 
 ##Live Server at:
 
